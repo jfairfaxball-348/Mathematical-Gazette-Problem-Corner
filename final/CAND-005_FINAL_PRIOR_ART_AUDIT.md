@@ -1,7 +1,7 @@
 # CAND-005 — Final Exact-Form Prior-Art Audit
 
 **Audit date:** 2026-10-05  
-**Final statement audited:** the frozen wording in \`final/CAND-005_FORMALISATION.md\`  
+**Final statement audited:** the frozen wording in `final/CAND-005_FORMALISATION.md`  
 **Classification:** **CLEAR_WITH_RELATED_PRIOR_ART**
 
 This is a qualified evidence assessment, not proof of originality.

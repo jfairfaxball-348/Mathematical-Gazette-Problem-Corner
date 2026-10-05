@@ -1,7 +1,7 @@
 # CAND-010 — Stage-5 Failure Record
 
 **Candidate:** How far is everyone’s nearest neighbour?  
-**Stage-4 status:** primary; \`CLEAR_WITH_RELATED_PRIOR_ART\`  
+**Stage-4 status:** primary; `CLEAR_WITH_RELATED_PRIOR_ART`  
 **Stage-5 outcome:** **RETIRED — REDISCOVERY**  
 **Reason:** final prior-art audit, not mathematical failure
 

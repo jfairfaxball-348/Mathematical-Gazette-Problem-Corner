@@ -2,7 +2,7 @@
 
 **Final title:** Which villages survive?  
 **Status:** canonical statement frozen  
-**Final novelty classification:** \`CLEAR_WITH_RELATED_PRIOR_ART\`
+**Final novelty classification:** `CLEAR_WITH_RELATED_PRIOR_ART`
 
 ## Canonical reader-facing statement
 

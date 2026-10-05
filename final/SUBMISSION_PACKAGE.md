@@ -48,7 +48,7 @@ Standard wiggle-subsequence algorithms likewise retain peaks and valleys while d
 
 The proposed problem is more specific in a different direction: it gives an asynchronous local deletion rule and asks whether **every** sequence of legal choices reaches the same actual subsequence. Targeted Stage-5 searches did not locate that exact deletion/confluence formulation.
 
-Accordingly the project classifies the novelty position as **CLEAR_WITH_RELATED_PRIOR_ART**, not unqualified clear/original. The detailed audit is in \`final/CAND-005_FINAL_PRIOR_ART_AUDIT.md\`.
+Accordingly the project classifies the novelty position as **CLEAR_WITH_RELATED_PRIOR_ART**, not unqualified clear/original. The detailed audit is in `final/CAND-005_FINAL_PRIOR_ART_AUDIT.md`.
 
 ## Validation
 
