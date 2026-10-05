@@ -1,6 +1,6 @@
 # Stage Gate Ledger
 
-A stage may be declared complete only when every required item for that gate is satisfied. “Mostly done” is not a pass.
+A stage normally may be declared complete only when every required item for that gate is satisfied. “Mostly done” is not a pass. Any explicit human-authorized exception must be recorded in `authoritative/DECISION_LOG.md` and must preserve the unmet requirements rather than silently marking them complete.
 
 ## Stage 1 — Scaffold / Bootstrap
 
@@ -24,9 +24,9 @@ Requirements:
 
 ## Stage 2 — Research
 
-**Status: IN PROGRESS.**
+**Status: CLOSED BY HUMAN OVERRIDE (2026-10-05); ordinary gate NOT PASSED.**
 
-Pass only when:
+Ordinary pass requirements were:
 
 - [ ] A substantial Problem Corner corpus has been reviewed: at least roughly 60 problems, preferably 80–100.
 - [x] Published solutions are reviewed as well as problem statements wherever accessible.
@@ -40,11 +40,11 @@ Pass only when:
 - [x] Corpus limitations and access gaps are documented.
 - [x] No serious candidate-generation campaign began before these requirements were met.
 
-Current evidence: 23 solution-reviewed records. The principal unresolved sampling issue is that 20 of 23 are still Chris Starr-era; only 3 are Nick Lord-era. The requested older-corpus tranche is incomplete; see `research/STAGE2_WORKING_NOTES.md`.
+Current evidence at closure: 23 solution-reviewed records. The principal unresolved sampling issue is that 20 of 23 are Chris Starr-era and only 3 are Nick Lord-era. The requested older-corpus tranche, roughly-60 minimum, balanced sampling, final synthesis, genre comparison and evidence-based Stage-3 design specification were incomplete. Per explicit human instruction recorded as decision D009, Stage 2 was nevertheless closed and Stage 3 unlocked. The unchecked requirements above remain genuinely unmet and are not retroactively treated as satisfied.
 
 ## Stage 3 — Discovery
 
-**Status: LOCKED.**
+**Status: IN PROGRESS (unlocked 2026-10-05 by D009).**
 
 Pass only when:
 
