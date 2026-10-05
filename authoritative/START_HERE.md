@@ -6,7 +6,7 @@ This is the authoritative entry point for a new session.
 
 **Stage 2 — Research: IN PROGRESS.**
 
-Stage 1 passed on 2026-10-05. The first Stage-2 research tranche is committed: **21 structured, solution-reviewed Problem Corner records** in `research/problem-catalogue.jsonl`. Stage 2 has **not** passed its gate.
+Stage 1 passed on 2026-10-05. The Stage-2 research catalogue now contains **23 structured, solution-reviewed Problem Corner records** in `research/problem-catalogue.jsonl`. Stage 2 has **not** passed its gate.
 
 No substantive candidate discovery has been performed.
 
@@ -40,9 +40,11 @@ Before continuing Stage 2, read:
 
 ## Stage-2 progress and limitation
 
-The first tranche deliberately varies mathematical mechanism and presentation and reviews published solutions, not merely statements. It spans statement years 2019, 2024, 2025 and 2026.
+The catalogue spans statement years 2015, 2017, 2019, 2024, 2025 and 2026 across nine issue contexts.
 
-It is nevertheless strongly recent/editor biased: **20 of 21** records are Chris Starr-era. The next tranche must correct that before any broad editorial conclusions are treated as stable.
+The older-corpus tranche has begun with two newly added Nick Lord-era records, 99.C and 101.L. Both were reviewed from full published Gazette pages in a legitimate institutional repository and corroborated against official Cambridge metadata.
+
+The era imbalance remains severe: **20 of 23** records are Chris Starr-era and **3 of 23** are Nick Lord-era. The requested older tranche of at least 24 new records is not yet complete.
 
 ## Prohibited now
 
@@ -55,10 +57,12 @@ Until the Stage-2 gate passes:
 
 ## What the next session should do
 
-Add at least **24 solution-reviewed problems from six or more pre-2024 issue contexts**, concentrating on **2010–2023** and especially the Nick Lord period. Prefer primary Cambridge Core Problem Corner pages/PDFs and published solutions, recording access limits honestly.
+Continue the same older-corpus tranche by adding at least **22 more solution-reviewed pre-2024 problems from at least four additional issue contexts**, so that the tranche reaches its original minimum of 24 records across six or more older contexts.
 
-Also repair the exact displayed statements for 110.B and 110.D if legitimate full-text access becomes available.
+Concentrate on **2010–2023** and especially the Nick Lord period. Sample non-consecutively where practical and deliberately seek variation in editor era, year/issue, mathematical area, contextual versus abstract framing, prerequisite level, statement/solution length, and single versus multiple-solution/editor-commentary cases.
 
-After that tranche, re-check balance by editor era, year/issue, contextual versus abstract presentation, prerequisite level, mechanism and solution length. Stage 2 still requires roughly 60 records, preferably 80–100, plus the evidence-based synthesis and design specification in the gate ledger.
+Prefer full Cambridge Core/Taylor & Francis historical Problem Corner pages and PDFs. If publisher full text is gated, use only legitimate institutional or repository copies that can be verified as the published Gazette pages, and record provenance honestly.
 
-Do not begin Stage 3.
+Also repair the exact displayed statements for 110.B and 110.D if legitimate publisher full-text access becomes available.
+
+After completing the remaining older tranche, re-check balance before planning the further records needed to cross the roughly-60 Stage-2 minimum. Do not begin Stage 3.
