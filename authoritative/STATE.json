@@ -21,11 +21,11 @@
     "preferred_range": "80-100"
   },
   "stage_2_progress": {
-    "catalogue_records": 21,
-    "solution_reviewed_records": 21,
-    "status_note": "First deliberately varied tranche committed; corpus is strongly recent/Chris-Starr-era biased and is not yet sufficient for Stage-2 synthesis."
+    "catalogue_records": 23,
+    "solution_reviewed_records": 23,
+    "status_note": "Older-corpus tranche has begun with two additional Nick Lord-era records (99.C and 101.L). The corpus remains strongly Chris-Starr-era biased at 20 of 23 and is not sufficient for Stage-2 synthesis."
   },
-  "next_action": "Add at least 24 solution-reviewed problems from six or more pre-2024 issue contexts, concentrating on 2010-2023 and the Nick Lord period; keep Stage 3 locked.",
+  "next_action": "Continue the older-corpus tranche: add at least 22 more solution-reviewed pre-2024 problems from at least four additional issue contexts, concentrating on 2010-2023 and the Nick Lord period; keep Stage 3 locked.",
   "authoritative_entrypoint": "authoritative/START_HERE.md",
   "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md"
 }
