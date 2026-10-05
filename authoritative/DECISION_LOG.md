@@ -73,3 +73,20 @@ Record only project-level decisions that affect objectives, stage order, evidenc
 **Selection rationale:** CAND-010 combines a very accessible statement, a non-obvious sharp extremum and a substantive elementary gap/total-variation solution. Its objective has established remote-pseudoforest / sum-min prior art, but the audit did not locate the exact fixed-span one-dimensional theorem. CAND-005 survives as reserve because the specific arbitrary-order deletion/confluence formulation was not found, although its local-extrema normal form has closer established prior art.  
 **Consequence:** Stage 5 is unlocked but was not begun in the Stage-4 session. Rediscoveries and the too-close rounding candidate are excluded from selection. Stage-4 clearance is evidence, not proof, of originality; Stage 5 must run the required final prior-art audit on the exact finished formulation.  
 **Unchanged constraints:** Publication target, central design principle, five-stage order, ten candidate-quality dimensions and novelty standards remain unchanged.
+
+## D012 — Stage-5 novelty audit retires CAND-010 and promotes CAND-005
+
+**Date:** 2026-10-05  
+**Decision:** Retire **CAND-010 — How far is everyone’s nearest neighbour?** as a Stage-5 `REDISCOVERY` and promote the sole frozen reserve, **CAND-005 — Which scenic villages survive?**, to primary.  
+**Mathematical finding:** CAND-010's theorem is correct. A fresh proof gives (S\le L+\min d_i\le nL/(n-1)), with equality only for equal gaps, so the mathematical failure mode did not occur.  
+**Novelty finding:** The final audit located the older linear nearest-neighbour-analysis literature of Pinder & Witherick (1973, 1975), later discussed by Stark & Young (1981). A 1989 application explicitly writes the statistic as a constant multiple of (L^{-1}\sum_i M_i) and states that its value (2) represents perfectly regular spacing. This is algebraically the same extremal value (sum_iM_i=nL/(n-1)).  
+**Consequence:** The Stage-4 audit remains preserved as the record of evidence available at that gate, but its selection is superseded. CAND-010 is not defended by cosmetic rewording. CAND-005 becomes the Stage-5 candidate in accordance with the frozen reserve discipline.  
+**Evidence:** `final/CAND-010_STAGE5_FAILURE.md`.
+
+## D013 — Stage 5 passed with CAND-005 submission package
+
+**Date:** 2026-10-05  
+**Decision:** Pass the Stage-5 gate with **CAND-005 — Which villages survive?** as the selected submission candidate and no reserve.  
+**Evidence:** The final package in `final/` freezes an unambiguous statement, proves confluence and identifies the survivors, records edge cases and assumptions, includes a useful monotone-run alternative proof, preserves exhaustive supporting checks for all permutation order types through (n=8), and records the lack of an independent human reader test. The exact final prior-art audit retains the qualified classification `CLEAR_WITH_RELATED_PRIOR_ART`: local-extrema / longest-alternating-subsequence material is established, but the exact arbitrary-current-neighbour deletion/confluence formulation was not located. Current official Problem Corner proposal instructions were rechecked and an email was drafted.  
+**Consequence:** The package is ready for human review and possible submission. No submission has been sent, and no unqualified originality claim is authorised.
+

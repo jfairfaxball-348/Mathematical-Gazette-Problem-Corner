@@ -55,7 +55,7 @@
   "current_stage": {
     "number": 5,
     "name": "Formalisation and Submission Package",
-    "status": "READY_NOT_STARTED"
+    "status": "PASSED_COMPLETE"
   },
   "locked_stages": [],
   "serious_candidate_discovery_performed": true,
@@ -68,11 +68,29 @@
   "frozen_stage_3_candidate_file": "candidates/serious-candidates.jsonl",
   "frozen_stage_3_candidate_count": 10,
   "stage_4_audit_summary": "prior-art/STAGE4_SUMMARY.md",
-  "selected_primary_candidate": "CAND-010",
-  "selected_reserve_candidates": [
-    "CAND-005"
-  ],
-  "next_action": "Begin Stage 5 only for primary CAND-010: freeze and rigorously formalise the exact problem/solution, adversarially check it, and perform the required final prior-art audit on the exact formulation before preparing the submission package. Keep CAND-005 as reserve. Do not treat Stage-4 clearance as proof of originality.",
+  "selected_primary_candidate": "CAND-005",
+  "selected_reserve_candidates": [],
+  "next_action": "Human review of the Stage-5 CAND-005 package, especially the qualified novelty note; if satisfied, send the proposal, solution and background information to the current Problem Corner editor. No submission has been sent autonomously.",
   "authoritative_entrypoint": "authoritative/START_HERE.md",
-  "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md"
+  "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md",
+  "stage_5": {
+    "status": "PASSED",
+    "completed_on": "2026-10-05",
+    "decision_refs": [
+      "D012",
+      "D013"
+    ],
+    "initial_primary_candidate": "CAND-010",
+    "retired_candidate": "CAND-010",
+    "retired_candidate_stage5_classification": "REDISCOVERY",
+    "final_selected_candidate": "CAND-005",
+    "final_novelty_assessment": "CLEAR_WITH_RELATED_PRIOR_ART",
+    "reserve_candidates": [],
+    "canonical_problem_file": "final/CAND-005_FORMALISATION.md",
+    "final_prior_art_file": "final/CAND-005_FINAL_PRIOR_ART_AUDIT.md",
+    "submission_package_file": "final/SUBMISSION_PACKAGE.md",
+    "submission_email_file": "final/SUBMISSION_EMAIL.md",
+    "reader_testing_note": "No independent human reader test was available in-session; an internal adversarial wording review was performed and the limitation is recorded.",
+    "submission_sent": false
+  }
 }

@@ -79,20 +79,20 @@ Gate evidence: ten schema-conforming records in `prior-art/audits/`; cross-candi
 
 ## Stage 5 — Formalisation and Submission Package
 
-**Status: UNLOCKED / READY, NOT STARTED.**
+**Status: PASSED (2026-10-05; D012, D013).**
 
-Pass only when:
+- [x] The canonical reader-facing problem statement is frozen.
+- [x] A complete rigorous solution is written and independently/adversarially checked.
+- [x] Edge cases, hidden assumptions, and interpretation ambiguities are resolved.
+- [x] Computation supports rather than substitutes for the proof.
+- [x] A materially useful alternative solution is included.
+- [x] Reader testing was performed if practical: no independent human reader was available, so no external test is claimed; the limitation and internal adversarial wording review are documented.
+- [x] A final prior-art audit was run against the exact finished formulation and mathematical kernel.
+- [x] Relevant background information for the editor is prepared.
+- [x] The submission package follows current Problem Corner instructions verified on 2026-10-05.
+- [x] A concise submission email to the current Problem Corner editor is prepared.
+- [x] All final authority/status documents identify the selected problem and reserve status consistently.
 
-- [ ] The canonical reader-facing problem statement is frozen.
-- [ ] A complete rigorous solution is written and independently/adversarially checked.
-- [ ] Edge cases, hidden assumptions, and interpretation ambiguities are resolved.
-- [ ] Computation, if used, supports rather than substitutes for the intended mathematics unless explicitly justified.
-- [ ] An alternative solution is included where it materially improves the package.
-- [ ] Reader testing is performed if practical, with material issues resolved.
-- [ ] A final prior-art audit is run against the exact finished formulation and mathematical kernel.
-- [ ] Relevant background information for the editor is prepared.
-- [ ] The submission package follows current Problem Corner instructions.
-- [ ] A concise submission email to the current Problem Corner editor is prepared.
-- [ ] All final authority/status documents identify the selected problem and reserve status consistently.
+Gate evidence: Stage 5 began with CAND-010. Its theorem and equality case were independently verified, but the final novelty audit found older linear nearest-neighbour analysis using the same nearest-neighbour sum and regular-spacing extremum; D012 therefore retires CAND-010 as a Stage-5 rediscovery and promotes the frozen reserve CAND-005. CAND-005 was then formalised, adversarially checked, computationally tested over all permutations of lengths 2 through 8, given a useful second proof, and re-audited in exact final form. Its final classification remains `CLEAR_WITH_RELATED_PRIOR_ART`. The package and unsent email draft are in `final/`.
 
-Passing Stage 5 means the package is ready for human submission; it does not authorise autonomous sending.
+Passing Stage 5 means the package is ready for human review/submission; it does not authorise autonomous sending. No submission has been sent.
