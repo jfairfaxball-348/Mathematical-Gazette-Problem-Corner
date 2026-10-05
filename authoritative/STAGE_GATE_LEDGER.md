@@ -44,23 +44,25 @@ Current evidence at closure: 23 solution-reviewed records. The principal unresol
 
 ## Stage 3 — Discovery
 
-**Status: IN PROGRESS (unlocked 2026-10-05 by D009).**
+**Status: PASSED (2026-10-05; D010).**
 
-Pass only when:
+Requirements:
 
-- [ ] Candidate generation is based explicitly on Stage-2 findings.
-- [ ] The pool is broad and diverse, up to roughly 50 serious candidates without padding.
-- [ ] Every serious candidate has a complete structured record using the candidate schema.
-- [ ] Each serious candidate has a plausible expected answer and solution mechanism, not merely an appealing story.
-- [ ] Basic mathematical soundness checks have been performed.
-- [ ] The diversity tracker shows that cosmetic variants have not been counted as distinct serious candidates.
-- [ ] Candidates have been assessed against the frozen quality rubric.
-- [ ] Weak, unsound, derivative-looking, or structurally repetitive candidates are rejected or demoted with reasons.
-- [ ] A clearly defined set of “serious Stage-3 candidates” is frozen for exhaustive Stage-4 audit.
+- [x] Candidate generation is based explicitly on Stage-2 findings.
+- [x] The pool is broad and diverse, up to roughly 50 serious candidates without padding.
+- [x] Every serious candidate has a complete structured record using the candidate schema.
+- [x] Each serious candidate has a plausible expected answer and solution mechanism, not merely an appealing story.
+- [x] Basic mathematical soundness checks have been performed.
+- [x] The diversity tracker shows that cosmetic variants have not been counted as distinct serious candidates.
+- [x] Candidates have been assessed against the frozen quality rubric.
+- [x] Weak, unsound, derivative-looking, or structurally repetitive candidates are rejected or demoted with reasons.
+- [x] A clearly defined set of “serious Stage-3 candidates” is frozen for exhaustive Stage-4 audit.
+
+Gate evidence: 31 substantially explored seeds; 10 frozen serious candidates; 17 rejected; 4 merged variants. The frozen records are in `candidates/serious-candidates.jsonl`, with discovery/validation evidence in `candidates/STAGE3_DISCOVERY_NOTES.md` and diversity control in `candidates/DIVERSITY_TRACKER.md`.
 
 ## Stage 4 — Prior-art / Novelty Audit
 
-**Status: LOCKED.**
+**Status: UNLOCKED / READY, NOT STARTED.**
 
 Pass only when:
 
