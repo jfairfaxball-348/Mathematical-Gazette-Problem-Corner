@@ -47,3 +47,12 @@ Record only project-level decisions that affect objectives, stage order, evidenc
 **Date:** 2026-10-05  
 **Decision:** Stage 1 passed its gate. Stage 2 is ready but not started.  
 **Evidence:** Charter, roadmap, publication-target note, rubric, three stage schemas, authority files, and gate ledger are all committed. No substantive candidate discovery was performed.
+
+## D009 — Stage 2 closed early by explicit human instruction
+
+**Date:** 2026-10-05  
+**Decision:** Close Stage 2 at the existing 23 structured, solution-reviewed catalogue records and move the project to Stage 3.  
+**Authority:** Explicit human instruction that the progress made is sufficient and the project should move on rather than continue being blocked by historical full-text access.  
+**Consequence:** This is a stage-gate exception, not an evidentiary finding. The ordinary Stage-2 gate did not pass: the roughly-60 corpus target, balanced older sampling, final synthesis, genre comparison and evidence-based Stage-3 design specification remain incomplete. Their limitations must remain visible. Stage 3 is unlocked; Stages 4–5 remain locked.  
+**Unchanged constraints:** The publication target, central design principle, five-stage order, ten candidate-quality dimensions, novelty standards and later-stage gates remain unchanged.
+
