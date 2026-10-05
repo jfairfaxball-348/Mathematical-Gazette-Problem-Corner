@@ -56,3 +56,11 @@ Record only project-level decisions that affect objectives, stage order, evidenc
 **Consequence:** This is a stage-gate exception, not an evidentiary finding. The ordinary Stage-2 gate did not pass: the roughly-60 corpus target, balanced older sampling, final synthesis, genre comparison and evidence-based Stage-3 design specification remain incomplete. Their limitations must remain visible. Stage 3 is unlocked; Stages 4–5 remain locked.  
 **Unchanged constraints:** The publication target, central design principle, five-stage order, ten candidate-quality dimensions, novelty standards and later-stage gates remain unchanged.
 
+## D010 — Stage 3 passed and serious candidate set frozen
+
+**Date:** 2026-10-05  
+**Decision:** Pass the Stage-3 discovery gate and freeze a ten-candidate serious set for exhaustive Stage-4 audit.  
+**Evidence:** 31 candidate seeds were substantially explored; 10 were promoted and mathematically checked, 17 rejected, and 4 merged as variants. Every frozen record contains the candidate-schema fields, a credible expected answer and solution mechanism, basic validation, diversity metadata, similarity risks, and a written ten-dimension rubric assessment.  
+**Frozen set:** CAND-001 through CAND-010 in `candidates/serious-candidates.jsonl`.  
+**Consequence:** Stage 4 is unlocked but was not begun in the Stage-3 session. Stage 4 must audit all ten candidates before any primary candidate is selected. Stage 5 remains locked.  
+**Novelty caution:** Stage-3 originality scores are risk estimates only; no candidate has yet received a Stage-4 novelty classification.
