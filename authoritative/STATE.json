@@ -30,16 +30,36 @@
     "rejected": 17,
     "merged_variants": 4
   },
+  "stage_4": {
+    "status": "PASSED",
+    "completed_on": "2026-10-05",
+    "decision_ref": "D011",
+    "audited_candidates": 10,
+    "classifications": {
+      "CAND-001": "REDISCOVERY",
+      "CAND-002": "REDISCOVERY",
+      "CAND-003": "REDISCOVERY",
+      "CAND-004": "REDISCOVERY",
+      "CAND-005": "CLEAR_WITH_RELATED_PRIOR_ART",
+      "CAND-006": "REDISCOVERY",
+      "CAND-007": "REDISCOVERY",
+      "CAND-008": "TOO_CLOSE_TO_EXISTING_PROBLEM",
+      "CAND-009": "REDISCOVERY",
+      "CAND-010": "CLEAR_WITH_RELATED_PRIOR_ART"
+    },
+    "primary_candidate": "CAND-010",
+    "reserve_candidates": [
+      "CAND-005"
+    ]
+  },
   "current_stage": {
-    "number": 4,
-    "name": "Prior-art / Novelty Audit",
+    "number": 5,
+    "name": "Formalisation and Submission Package",
     "status": "READY_NOT_STARTED"
   },
-  "locked_stages": [
-    5
-  ],
+  "locked_stages": [],
   "serious_candidate_discovery_performed": true,
-  "stage_4_audit_started": false,
+  "stage_4_audit_started": true,
   "design_principle": "simple situation → natural question → unexpected answer → elegant mathematics",
   "stage_2_corpus_target": {
     "minimum_approximate": 60,
@@ -47,7 +67,12 @@
   },
   "frozen_stage_3_candidate_file": "candidates/serious-candidates.jsonl",
   "frozen_stage_3_candidate_count": 10,
-  "next_action": "Begin Stage 4 only: audit all 10 frozen Stage-3 candidates using prior-art/prior-art-audit.schema.json, searching both visible/story forms and mathematically equivalent formulations. Do not select a final candidate until every frozen candidate has a documented classification.",
+  "stage_4_audit_summary": "prior-art/STAGE4_SUMMARY.md",
+  "selected_primary_candidate": "CAND-010",
+  "selected_reserve_candidates": [
+    "CAND-005"
+  ],
+  "next_action": "Begin Stage 5 only for primary CAND-010: freeze and rigorously formalise the exact problem/solution, adversarially check it, and perform the required final prior-art audit on the exact formulation before preparing the submission package. Keep CAND-005 as reserve. Do not treat Stage-4 clearance as proof of originality.",
   "authoritative_entrypoint": "authoritative/START_HERE.md",
   "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md"
 }

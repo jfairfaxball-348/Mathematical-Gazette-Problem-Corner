@@ -62,24 +62,24 @@ Gate evidence: 31 substantially explored seeds; 10 frozen serious candidates; 17
 
 ## Stage 4 — Prior-art / Novelty Audit
 
-**Status: UNLOCKED / READY, NOT STARTED.**
+**Status: PASSED (2026-10-05; D011).**
 
-Pass only when:
+- [x] Every serious Stage-3 candidate has a documented audit.
+- [x] Searches cover both story/visible wording and mathematically equivalent formulations.
+- [x] Appropriate source classes are searched, including the Gazette archive and relevant problem/recreational/general mathematical sources.
+- [x] Search formulations, dates, sources, and findings are recorded.
+- [x] Mathematical-equivalence checks explain what transformations or abstractions were considered.
+- [x] “No result found” is never presented as proof of novelty.
+- [x] Every candidate receives exactly one frozen novelty classification.
+- [x] Candidates classified as rediscoveries or too close are not selected.
+- [x] Materially related prior art is analysed, not merely linked.
+- [x] A primary candidate and a small number of reserves are selected with written rationale grounded in Gazette fit, mathematics, and novelty evidence.
 
-- [ ] Every serious Stage-3 candidate has a documented audit.
-- [ ] Searches cover both story/visible wording and mathematically equivalent formulations.
-- [ ] Appropriate source classes are searched, including the Gazette archive and relevant problem/recreational/general mathematical sources.
-- [ ] Search formulations, dates, sources, and findings are recorded.
-- [ ] Mathematical-equivalence checks explain what transformations or abstractions were considered.
-- [ ] “No result found” is never presented as proof of novelty.
-- [ ] Every candidate receives exactly one frozen novelty classification.
-- [ ] Candidates classified as rediscoveries or too close are not selected.
-- [ ] Materially related prior art is analysed, not merely linked.
-- [ ] A primary candidate and a small number of reserves are selected with written rationale grounded in Gazette fit, mathematics, and novelty evidence.
+Gate evidence: ten schema-conforming records in `prior-art/audits/`; cross-candidate synthesis in `prior-art/STAGE4_SUMMARY.md`. Seven candidates are `REDISCOVERY`, CAND-008 is `TOO_CLOSE_TO_EXISTING_PROBLEM`, and CAND-005/CAND-010 are `CLEAR_WITH_RELATED_PRIOR_ART`. CAND-010 is primary and CAND-005 is reserve. No unqualified originality claim is made.
 
 ## Stage 5 — Formalisation and Submission Package
 
-**Status: LOCKED.**
+**Status: UNLOCKED / READY, NOT STARTED.**
 
 Pass only when:
 

@@ -1,0 +1,157 @@
+{
+  "candidate_id": "CAND-009",
+  "audit_started_on": "2026-10-05",
+  "audit_completed_on": "2026-10-05",
+  "visible_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "round robin maximum rock paper scissors cyclic triples tournament",
+      "filters_or_scope": null,
+      "result_summary": "Searches immediately returned tournament-theory literature on the maximum number of cyclic triples.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "The Mathematical Gazette archive / web index",
+      "query": "Mathematical Gazette cyclic triples tournament maximum",
+      "filters_or_scope": null,
+      "result_summary": "No exact Gazette Problem Corner hit was needed for classification because classical tournament sources contain the exact theorem.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Academic search",
+      "query": "maximum number cyclic triples tournament regular near-regular",
+      "filters_or_scope": null,
+      "result_summary": "Found Beineke & Harary (2001), whose abstract calls the tournament maximum well known and says it is attained by regular and near-regular tournaments.",
+      "promising_hits": [
+        "https://www.sciencedirect.com/science/article/pii/S0095895600919956"
+      ]
+    }
+  ],
+  "equivalence_model": {
+    "story_stripped_kernel": "In a tournament on n vertices, maximize directed 3-cycles. A triple is transitive iff it has a unique top vertex; if vertex i has score w_i, the number of transitive triples is sum_i C(w_i,2). Minimize this convex sum subject to sum w_i=C(n,2), giving regular/near-regular scores.",
+    "transformations_checked": [
+      "players/games ↔ tournament vertices/arcs",
+      "rock-paper-scissors triple ↔ directed 3-cycle / cyclic triple",
+      "win totals ↔ tournament score sequence",
+      "balanced cyclic schedule ↔ regular / near-regular tournament"
+    ],
+    "invariants_or_signature": [
+      "cyclic triples = C(n,3)-sum C(w_i,2)",
+      "regular/near-regular extremisers",
+      "odd maximum (n^3-n)/24",
+      "even maximum (n^3-4n)/24"
+    ],
+    "equivalence_notes": "The terminology 'rock-paper-scissors triple' is simply the standard cyclic triple of tournament theory."
+  },
+  "equivalent_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Academic literature",
+      "query": "On the Maximum Number of Cyclic Triples in Oriented Graphs",
+      "filters_or_scope": null,
+      "result_summary": "Found Beineke & Harary (2001); it states the maximum for tournaments is well known and achieved by regular/near-regular tournaments.",
+      "promising_hits": [
+        "https://doi.org/10.1006/jctb.2000.1995"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Graph theory reference search",
+      "query": "number transitive triples score sequence sum s_i(s_i-1)/2 maximum cyclic triples",
+      "filters_or_scope": null,
+      "result_summary": "Found standard references giving exactly the score-sequence identity and the two parity formulas.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Historical tournament search",
+      "query": "Kendall Babington Smith cyclic triples tournament 1940 maximum",
+      "filters_or_scope": null,
+      "result_summary": "Found references tracing the cyclic-triple formula to classical tournament/statistical literature.",
+      "promising_hits": []
+    }
+  ],
+  "source_classes": [
+    {
+      "class": "The Mathematical Gazette / Problem Corner archive",
+      "searched": true,
+      "notes": "Targeted Cambridge Core, Taylor & Francis and web-index searches were run for the candidate surface and stripped kernel; no exact Gazette Problem Corner hit was found unless noted in findings."
+    },
+    {
+      "class": "Other mathematical problem journals / problem archives",
+      "searched": true,
+      "notes": "Targeted problem-archive and mathematical Q&A searches were used where the elementary formulation made them likely to surface prior art."
+    },
+    {
+      "class": "Olympiad and contest problem collections",
+      "searched": false,
+      "notes": "Not a priority source class after stronger, directly equivalent research/Q&A prior art was found; omission is deliberate."
+    },
+    {
+      "class": "Recreational mathematics collections and books",
+      "searched": true,
+      "notes": "Targeted recreational/book searches were run."
+    },
+    {
+      "class": "General mathematical literature",
+      "searched": true,
+      "notes": "Scholarly and general web searches were run using story-stripped terminology and theorem signatures."
+    },
+    {
+      "class": "Mathematics Stack Exchange",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent elementary formulations."
+    },
+    {
+      "class": "MathOverflow",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent research-level formulations."
+    },
+    {
+      "class": "OEIS",
+      "searched": true,
+      "notes": "Checked where the candidate naturally generates a sequence/statistic."
+    },
+    {
+      "class": "Searchable web",
+      "searched": true,
+      "notes": "Multiple visible and equivalent-form phrasings were searched and promising hits were inspected."
+    },
+    {
+      "class": "Academic papers",
+      "searched": true,
+      "notes": "Relevant papers/abstracts were inspected where the kernel belongs to an established field."
+    }
+  ],
+  "findings": [
+    {
+      "source": "Lowell W. Beineke and Frank Harary, On the Maximum Number of Cyclic Triples in Oriented Graphs, JCTB 81 (2001), 165-176",
+      "url_or_citation": "https://doi.org/10.1006/jctb.2000.1995",
+      "relationship": "Its abstract says the maximum number of cyclic triples in a tournament of given order is well known and realised by regular and near-regular tournaments.",
+      "materiality": "identical",
+      "notes": "This is the exact frozen extremal statistic and extremiser class."
+    },
+    {
+      "source": "Classical tournament score-sequence formula (Kendall & Babington Smith / standard graph-theory texts)",
+      "url_or_citation": null,
+      "relationship": "The number of transitive triples is sum_i C(s_i,2), yielding maxima (n^3-n)/24 for odd n and (n^3-4n)/24 for even n.",
+      "materiality": "identical",
+      "notes": "These are exactly the frozen formulas and proof mechanism."
+    }
+  ],
+  "coverage_assessment": {
+    "strength": "strong",
+    "gaps": [
+      "No exhaustive problem-journal search was needed after the theorem was identified as classical tournament theory."
+    ],
+    "why_reasonably_strong_or_not": "The result, formulas, score-sequence identity and regular/near-regular extremisers are all standard prior art."
+  },
+  "final_classification": "REDISCOVERY",
+  "classification_rationale": "The candidate is the classical maximum-cyclic-triples theorem for tournaments, with the standard score-sequence proof. The round-robin/RPS wording is only a surface translation.",
+  "follow_up_required": [
+    "Do not select."
+  ]
+}

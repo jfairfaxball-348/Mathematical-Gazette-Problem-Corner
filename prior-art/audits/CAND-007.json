@@ -1,0 +1,150 @@
+{
+  "candidate_id": "CAND-007",
+  "audit_started_on": "2026-10-05",
+  "audit_completed_on": "2026-10-05",
+  "visible_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "random shortest grid path expected visits main diagonal",
+      "filters_or_scope": null,
+      "result_summary": "Found an almost exact MathOverflow question and answer for uniform lattice paths from (0,0) to (n,n).",
+      "promising_hits": [
+        "https://mathoverflow.net/questions/266957/expected-number-of-crossings-of-the-diagonal-of-a-lattice-path"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "The Mathematical Gazette archive / web index",
+      "query": "Mathematical Gazette random lattice path diagonal expected visits",
+      "filters_or_scope": null,
+      "result_summary": "No exact Gazette Problem Corner hit was located; broader lattice-path prior art is extensive.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Problem/Q&A search",
+      "query": "expected number diagonal contacts lattice path (0,0) (n,n)",
+      "filters_or_scope": null,
+      "result_summary": "Returned the same MathOverflow result and classical central-binomial convolution references.",
+      "promising_hits": []
+    }
+  ],
+  "equivalence_model": {
+    "story_stripped_kernel": "Choose uniformly a word with n E steps and n N steps. Count indices k for which after 2k steps the counts are equal. Sum indicators for visits to (k,k); the visit probability is C(2k,k)C(2n-2k,n-k)/C(2n,n).",
+    "transformations_checked": [
+      "city street route ↔ monotone lattice path",
+      "shortest route ↔ balanced binary word",
+      "diagonal junction visit ↔ zero/return of a simple bridge at even time",
+      "expected visits ↔ local time / sum of visit indicators"
+    ],
+    "invariants_or_signature": [
+      "central binomial coefficients",
+      "convolution sum 4^n",
+      "expectation including endpoints 4^n/C(2n,n)",
+      "subtract two endpoints"
+    ],
+    "equivalence_notes": "The wording 'visit' versus 'cross' does not matter for the MathOverflow answer cited below: the answer explicitly counts all (k,k) visits and says to subtract two endpoints if desired."
+  },
+  "equivalent_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "MathOverflow",
+      "query": "Expected number of crossings of the diagonal of a lattice path",
+      "filters_or_scope": null,
+      "result_summary": "Found Fedor Petrov's 2017 answer using exactly xi_k indicators and the convolution sum, yielding 4^n/C(2n,n), with the note 'subtract 2' to exclude endpoints.",
+      "promising_hits": [
+        "https://mathoverflow.net/questions/266957/expected-number-of-crossings-of-the-diagonal-of-a-lattice-path"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Combinatorics search",
+      "query": "central binomial convolution sum C(2k,k) C(2n-2k,n-k) 4^n",
+      "filters_or_scope": null,
+      "result_summary": "Confirmed the identity is classical (also referenced there to Stanley's Enumerative Combinatorics).",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Probability search",
+      "query": "random walk bridge expected local time zero central binomial",
+      "filters_or_scope": null,
+      "result_summary": "Found the equivalent bridge/local-time framing; unnecessary for classification once the exact lattice-path problem was found.",
+      "promising_hits": []
+    }
+  ],
+  "source_classes": [
+    {
+      "class": "The Mathematical Gazette / Problem Corner archive",
+      "searched": true,
+      "notes": "Targeted Cambridge Core, Taylor & Francis and web-index searches were run for the candidate surface and stripped kernel; no exact Gazette Problem Corner hit was found unless noted in findings."
+    },
+    {
+      "class": "Other mathematical problem journals / problem archives",
+      "searched": true,
+      "notes": "Targeted problem-archive and mathematical Q&A searches were used where the elementary formulation made them likely to surface prior art."
+    },
+    {
+      "class": "Olympiad and contest problem collections",
+      "searched": false,
+      "notes": "Not a priority source class after stronger, directly equivalent research/Q&A prior art was found; omission is deliberate."
+    },
+    {
+      "class": "Recreational mathematics collections and books",
+      "searched": true,
+      "notes": "Targeted recreational/book searches were run."
+    },
+    {
+      "class": "General mathematical literature",
+      "searched": true,
+      "notes": "Scholarly and general web searches were run using story-stripped terminology and theorem signatures."
+    },
+    {
+      "class": "Mathematics Stack Exchange",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent elementary formulations."
+    },
+    {
+      "class": "MathOverflow",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent research-level formulations."
+    },
+    {
+      "class": "OEIS",
+      "searched": true,
+      "notes": "Checked where the candidate naturally generates a sequence/statistic."
+    },
+    {
+      "class": "Searchable web",
+      "searched": true,
+      "notes": "Multiple visible and equivalent-form phrasings were searched and promising hits were inspected."
+    },
+    {
+      "class": "Academic papers",
+      "searched": true,
+      "notes": "Relevant papers/abstracts were inspected where the kernel belongs to an established field."
+    }
+  ],
+  "findings": [
+    {
+      "source": "MathOverflow — Expected number of crossings of the diagonal of a lattice path?",
+      "url_or_citation": "https://mathoverflow.net/questions/266957/expected-number-of-crossings-of-the-diagonal-of-a-lattice-path",
+      "relationship": "For a uniformly chosen path from (0,0) to (n,n), an answer defines indicators for (k,k), sums C(2k,k)C(2(n-k),n-k), obtains 4^n/C(2n,n), and says to subtract 2 if endpoints are excluded.",
+      "materiality": "identical",
+      "notes": "This is the frozen statement, expected answer and solution mechanism."
+    }
+  ],
+  "coverage_assessment": {
+    "strength": "strong",
+    "gaps": [
+      "No need to reconstruct the full classical lattice-path literature after an exact public problem/solution was found."
+    ],
+    "why_reasonably_strong_or_not": "An exact predecessor matches the route model, statistic, endpoint convention, closed form and indicator/convolution proof."
+  },
+  "final_classification": "REDISCOVERY",
+  "classification_rationale": "The frozen candidate is already answered on MathOverflow in essentially the same mathematical wording, with the same formula and proof. It is a direct rediscovery.",
+  "follow_up_required": [
+    "Do not select."
+  ]
+}

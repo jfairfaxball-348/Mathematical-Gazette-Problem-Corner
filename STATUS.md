@@ -7,52 +7,50 @@
 - Stage 1 — Scaffold / Bootstrap: **PASSED / COMPLETE**
 - Stage 2 — Research: **CLOSED BY HUMAN OVERRIDE; ORDINARY GATE NOT PASSED**
 - Stage 3 — Discovery: **PASSED / COMPLETE**
-- Stage 4 — Prior-art / Novelty Audit: **UNLOCKED / READY, NOT STARTED**
-- Stage 5 — Formalisation and Submission Package: **LOCKED**
+- Stage 4 — Prior-art / Novelty Audit: **PASSED / COMPLETE**
+- Stage 5 — Formalisation and Submission Package: **UNLOCKED / READY, NOT STARTED**
 
-Decision **D010** records the Stage-3 pass. No Stage-4 prior-art audit was performed in the Stage-3 session.
+Decision **D011** records the Stage-4 pass and selection.
 
 ## Stage-2 limitation carried forward
 
 The research catalogue remains at **23 structured, solution-reviewed Problem Corner records**, with known era imbalance and incomplete synthesis. D009 remains an exception to the Stage-2 gate, not evidence that the missing research was completed.
 
-## Stage-3 outcome
+## Stage-4 outcome
 
-The discovery programme substantially explored **31** candidate seeds.
+All ten frozen Stage-3 candidates have complete structured audits in `prior-art/audits/`.
 
-Final disposition:
-- **10** frozen serious candidates;
-- **17** rejected;
-- **4** merged as variants / same-family formulations.
+| Candidate | Classification |
+|---|---|
+| CAND-001 — Crossing ribbons at a round table | **REDISCOVERY** |
+| CAND-002 — How many nearest-neighbour pairs? | **REDISCOVERY** |
+| CAND-003 — Equalising by pairwise sharing | **REDISCOVERY** |
+| CAND-004 — The doubling transfer game | **REDISCOVERY** |
+| CAND-005 — Which scenic villages survive? | **CLEAR_WITH_RELATED_PRIOR_ART** |
+| CAND-006 — When must a choice be reciprocated? | **REDISCOVERY** |
+| CAND-007 — Returns to the city diagonal | **REDISCOVERY** |
+| CAND-008 — Round separately or round once? | **TOO_CLOSE_TO_EXISTING_PROBLEM** |
+| CAND-009 — Rock-paper-scissors triples | **REDISCOVERY** |
+| CAND-010 — How far is everyone’s nearest neighbour? | **CLEAR_WITH_RELATED_PRIOR_ART** |
 
-The serious set is stored in `candidates/serious-candidates.jsonl`; every record is marked `FROZEN_FOR_STAGE_4`.
+No candidate is classified `CLEAR`. A failed search is not treated as proof of originality.
 
-The final set is:
+## Selection
 
-1. CAND-001 — Crossing ribbons at a round table
-2. CAND-002 — How many nearest-neighbour pairs?
-3. CAND-003 — Equalising by pairwise sharing
-4. CAND-004 — The doubling transfer game
-5. CAND-005 — Which scenic villages survive?
-6. CAND-006 — When must a choice be reciprocated?
-7. CAND-007 — Returns to the city diagonal
-8. CAND-008 — Round separately or round once?
-9. CAND-009 — Rock-paper-scissors triples
-10. CAND-010 — How far is everyone’s nearest neighbour?
+**Primary:** CAND-010 — How far is everyone’s nearest neighbour?
 
-The strongest provisional mathematical/editorial candidates before novelty auditing are CAND-004, CAND-003, CAND-010, CAND-002 and CAND-001. This is **not** a final selection.
+**Reserve:** CAND-005 — Which scenic villages survive?
 
-Important failures caught during discovery include the stuck merge state (1,2,1), choice-dependent balancing times from ((0,0,4)), and an initially incorrect small grid-route count that was corrected before promotion.
+CAND-010 is preferred because its exact fixed-span one-dimensional theorem was not located despite searching both nearest-neighbour wording and the established remote-pseudoforest / sum-min objective terminology, while its Stage-3 record has stronger mathematical depth. CAND-005 remains a credible reserve, but its terminal local-extrema object is visibly closer to established longest-alternating-subsequence / peak-valley material.
 
-## Stage-4 boundary
+Seven rediscoveries and CAND-008's too-close rounding problem are excluded from selection.
 
-Stage 4 is now unlocked because the Stage-3 gate genuinely passed.
+## Remaining novelty caution
 
-The next session must audit **all ten** frozen candidates using:
-- `prior-art/README.md`;
-- `prior-art/prior-art-audit.schema.json`;
-- both visible/story searches and story-stripped mathematical-equivalence searches.
+CAND-010 has real related prior art: the sum of each point's nearest-neighbour distance is a known optimization/diversity objective. CAND-005 likewise has related local-extrema and alternating-subsequence prior art.
 
-No candidate may be called original merely because a quick search is empty, and no primary publication candidate should be selected until all ten audits are complete and classified.
+The Stage-4 result is therefore a documented defensible novelty position, **not** publication-level proof of originality. Stage 5 still requires a final audit against the exact finished formulation.
 
-Stage 5 remains locked.
+## Stage-5 boundary
+
+Stage 5 is unlocked because every Stage-4 gate item is satisfied. No Stage-5 formalisation, submission package or editor email has been begun in the Stage-4 session.

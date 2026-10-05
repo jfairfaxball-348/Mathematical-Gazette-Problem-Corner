@@ -4,15 +4,29 @@ This is the authoritative entry point for a new session.
 
 ## Current stage
 
-**Stage 4 — Prior-art / Novelty Audit: READY, NOT STARTED.**
+**Stage 5 — Formalisation and Submission Package: READY, NOT STARTED.**
 
 Stage 1 passed on 2026-10-05.
 
 Stage 2 was **closed by explicit human override** on 2026-10-05 at **23 structured, solution-reviewed Problem Corner records**. Its ordinary gate did not pass; see D009.
 
-Stage 3 **passed on 2026-10-05** after a substantial discovery programme. Decision **D010** records the gate pass. The frozen Stage-3 set contains **10** mathematically checked serious candidates.
+Stage 3 **passed on 2026-10-05** and froze ten serious candidates; see D010.
 
-No formal Stage-4 novelty audit had been performed at the moment Stage 3 closed.
+Stage 4 **passed on 2026-10-05** after all ten frozen candidates received documented visible-form and mathematical-equivalence audits; see D011 and `prior-art/STAGE4_SUMMARY.md`.
+
+## Stage-4 selection
+
+**Primary:** **CAND-010 — How far is everyone’s nearest neighbour?**
+
+**Reserve:** **CAND-005 — Which scenic villages survive?**
+
+Both are classified `CLEAR_WITH_RELATED_PRIOR_ART`, not `CLEAR`.
+
+The other eight candidates are excluded from selection:
+- CAND-001, CAND-002, CAND-003, CAND-004, CAND-006, CAND-007 and CAND-009 — `REDISCOVERY`;
+- CAND-008 — `TOO_CLOSE_TO_EXISTING_PROBLEM`.
+
+Stage-4 clearance does not prove originality. CAND-010's objective belongs to established remote-pseudoforest / sum-min diversity literature; what was not located is the exact fixed-span one-dimensional extremal theorem. Stage 5 must re-audit the exact final formulation.
 
 ## What is authoritative
 
@@ -28,60 +42,40 @@ Current explicit human instructions come first. Otherwise, use the committed rep
 
 If documents appear inconsistent, reconcile them explicitly.
 
-## Read first for Stage 4
+## Read first for Stage 5
 
-Read in the mandatory order from `AGENTS.md`, then in particular:
+Follow the mandatory sequence in `AGENTS.md`. In particular, read:
 - `authoritative/STATE.json`
 - `PROJECT_CHARTER.md`
 - `ROADMAP.md`
 - `authoritative/STAGE_GATE_LEDGER.md`
 - `STATUS.md`
+- `authoritative/DECISION_LOG.md`
 - `docs/PUBLICATION_TARGET.md`
 - `docs/CANDIDATE_QUALITY_RUBRIC.md`
-- `research/STAGE2_WORKING_NOTES.md`
-- `candidates/STAGE3_DISCOVERY_NOTES.md`
 - `candidates/serious-candidates.jsonl`
-- `candidates/DIVERSITY_TRACKER.md`
-- `prior-art/README.md`
-- `prior-art/prior-art-audit.schema.json`
+- `prior-art/STAGE4_SUMMARY.md`
+- `prior-art/audits/CAND-010.json`
+- `prior-art/audits/CAND-005.json`
 
-## Stage-2 evidence limitation still applies
+The Stage-2 evidence limitation still applies: the 23-record corpus is incomplete and era-biased.
 
-The 23-record corpus is useful but incomplete and era-biased. The Stage-3 pass did not retroactively strengthen Stage-2 evidence.
+## Stage-5 work now allowed
 
-Useful provisional design clues remain:
-- short statements can support substantially longer solutions;
-- alternative solutions and solver variants are editorially valued;
-- representation changes and elementary decisive ideas recur;
-- strong generalisations can emerge from simple initial statements;
-- contextual/everyday framing is represented, but historical frequency is not established.
+Formalise **CAND-010 only** as the primary unless a genuine fatal issue forces use of the reserve.
 
-## Frozen Stage-3 set
+Stage 5 must:
+- freeze the canonical reader-facing statement;
+- write and adversarially check a complete rigorous solution;
+- resolve edge cases and hidden assumptions;
+- seek a materially useful alternative solution where appropriate;
+- conduct reader testing if practical;
+- perform a final prior-art audit on the exact finished statement and mathematical kernel;
+- prepare relevant background information and the Problem Corner submission package;
+- draft, but do not autonomously send, the submission email.
 
-The ten candidates frozen for Stage 4 are CAND-001 through CAND-010 in `candidates/serious-candidates.jsonl`.
-
-They cover random pairings, nearest-neighbour geometry, sharing/averaging, modular transfer dynamics, deletion/rewrite processes, reciprocal-choice thresholds, lattice paths, rounding, tournament cycles and deterministic spacing extremals.
-
-Their Stage-3 originality scores are **not novelty findings**.
-
-## Stage-4 work now allowed
-
-Stage 4 must audit **every frozen serious candidate**.
-
-For each candidate:
-- search the visible/story formulation;
-- strip the story to its mathematical kernel and search equivalent formulations;
-- record search queries, dates, source classes and findings;
-- reason explicitly about transformations/equivalences;
-- distinguish “no result found” from evidence of originality;
-- assign exactly one frozen novelty classification from the schema.
-
-Only after all ten audits are complete may Stage 4 select a primary candidate and a small number of reserves.
-
-## Locked stage
-
-Stage 5 remains locked until the Stage-4 gate passes.
+Keep **CAND-005** as reserve rather than developing both in parallel without need.
 
 ## Next action
 
-Begin Stage 4 with a systematic audit plan for all ten frozen candidates. Do not reopen Stage 3 casually, do not add cosmetic variants to the frozen set, and do not begin final formalisation or submission work.
+Begin Stage 5 with CAND-010: re-check the exact theorem and equality cases, freeze the canonical wording, then build the rigorous solution and final exact-form novelty check before any submission materials are considered complete.

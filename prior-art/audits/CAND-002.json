@@ -1,0 +1,163 @@
+{
+  "candidate_id": "CAND-002",
+  "audit_started_on": "2026-10-05",
+  "audit_completed_on": "2026-10-05",
+  "visible_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "random points circle mutual nearest neighbour pairs expected number",
+      "filters_or_scope": null,
+      "result_summary": "Found a Theoretical Computer Science Stack Exchange discussion of the wrap-around one-dimensional metric, explicitly turning mutual nearest-neighbour pairs into local-minimum gaps and obtaining n/3.",
+      "promising_hits": [
+        "https://cstheory.stackexchange.com/questions/47034/number-of-connected-components-of-a-random-nearest-neighbor-graph/47181"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "The Mathematical Gazette archive / web index",
+      "query": "Mathematical Gazette nearest neighbour pairs random points circle",
+      "filters_or_scope": null,
+      "result_summary": "No exact Gazette Problem Corner item was located in indexed searches; this is only a coverage note.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Scholarly web",
+      "query": "mutual nearest neighbor pairs one dimensional uniform data expected n/3",
+      "filters_or_scope": null,
+      "result_summary": "Found published one-dimensional uniform-data work proving E(R_n)=n/3 and representing reflexive pairs by local-minimum spacings.",
+      "promising_hits": [
+        "Bahadır & Ceyhan, Probability and Mathematical Statistics 38 (2018)"
+      ]
+    }
+  ],
+  "equivalence_model": {
+    "story_stripped_kernel": "For exchangeable cyclic spacings, count gaps that are smaller than both adjacent gaps. Each such local-minimum gap corresponds exactly to a mutual nearest-neighbour pair; by symmetry each gap is locally minimal with probability 1/3.",
+    "transformations_checked": [
+      "uniform points on a circle ↔ uniform points on [0,1) with wrap-around metric",
+      "mutual nearest neighbours ↔ reflexive nearest-neighbour pairs",
+      "point configuration ↔ cyclic spacing vector",
+      "mutual pair ↔ local minimum of three consecutive spacings",
+      "circle version ↔ Stage-3 merged line-segment variant"
+    ],
+    "invariants_or_signature": [
+      "local minima of exchangeable spacings",
+      "probability 1/3",
+      "expected count n/3",
+      "nearest-neighbour graph components anchored by mutual pairs"
+    ],
+    "equivalence_notes": "The Stage-3 record itself declared the line version a merged variant, so exact prior art for that equivalent formulation is material, not a separate story."
+  },
+  "equivalent_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Academic literature / arXiv",
+      "query": "reflexive nearest neighbor pairs uniform interval n/3",
+      "filters_or_scope": null,
+      "result_summary": "Found Bahadır & Ceyhan; Theorem 3.1 gives mean n/3, and the proof uses the same local-minimum spacing indicators. The paper also credits Enns et al. (1999) with the same mean.",
+      "promising_hits": [
+        "https://arxiv.org/abs/1605.01940"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Theoretical Computer Science Stack Exchange",
+      "query": "wrap around metric mutual nearest neighbor pairs local minimum probability 1/3",
+      "filters_or_scope": null,
+      "result_summary": "Found the circle-equivalent wrap-around formulation and the n/3 local-gap argument.",
+      "promising_hits": [
+        "Number of connected components of a random nearest neighbor graph?"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "nearest neighbour graph reflexive pairs local minima spacings",
+      "filters_or_scope": null,
+      "result_summary": "Returned established nearest-neighbour literature and reinforced that reflexive/mutual pairs are a standard statistic.",
+      "promising_hits": []
+    }
+  ],
+  "source_classes": [
+    {
+      "class": "The Mathematical Gazette / Problem Corner archive",
+      "searched": true,
+      "notes": "Targeted Cambridge Core, Taylor & Francis and web-index searches were run for the candidate surface and stripped kernel; no exact Gazette Problem Corner hit was found unless noted in findings."
+    },
+    {
+      "class": "Other mathematical problem journals / problem archives",
+      "searched": true,
+      "notes": "Targeted problem-archive and mathematical Q&A searches were used where the elementary formulation made them likely to surface prior art."
+    },
+    {
+      "class": "Olympiad and contest problem collections",
+      "searched": false,
+      "notes": "Not a priority source class after stronger, directly equivalent research/Q&A prior art was found; omission is deliberate."
+    },
+    {
+      "class": "Recreational mathematics collections and books",
+      "searched": false,
+      "notes": "Not searched exhaustively; stronger source classes supplied decisive evidence or the mechanism was better indexed in research literature."
+    },
+    {
+      "class": "General mathematical literature",
+      "searched": true,
+      "notes": "Scholarly and general web searches were run using story-stripped terminology and theorem signatures."
+    },
+    {
+      "class": "Mathematics Stack Exchange",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent elementary formulations."
+    },
+    {
+      "class": "MathOverflow",
+      "searched": false,
+      "notes": "Not a high-yield class for this candidate; omission is deliberate."
+    },
+    {
+      "class": "OEIS",
+      "searched": false,
+      "notes": "Not naturally sequence-led or no distinctive sequence was needed for the audit."
+    },
+    {
+      "class": "Searchable web",
+      "searched": true,
+      "notes": "Multiple visible and equivalent-form phrasings were searched and promising hits were inspected."
+    },
+    {
+      "class": "Academic papers",
+      "searched": true,
+      "notes": "Relevant papers/abstracts were inspected where the kernel belongs to an established field."
+    }
+  ],
+  "findings": [
+    {
+      "source": "Selim Bahadır and Elvan Ceyhan, On the Number of Reflexive and Shared Nearest Neighbor Pairs in One-Dimensional Uniform Data",
+      "url_or_citation": "https://arxiv.org/abs/1605.01940",
+      "relationship": "For uniform one-dimensional data, proves E(R_n)=n/3 and represents reflexive pairs via local-minimum spacings; cites earlier 1999 work for the same expectation.",
+      "materiality": "near_identical",
+      "notes": "This is the Stage-3 merged line formulation and uses the same statistic and local-spacing mechanism."
+    },
+    {
+      "source": "Theoretical Computer Science Stack Exchange — Number of connected components of a random nearest neighbor graph?",
+      "url_or_citation": "https://cstheory.stackexchange.com/questions/47034/number-of-connected-components-of-a-random-nearest-neighbor-graph/47181",
+      "relationship": "Uses a wrap-around metric (the circle), identifies a mutual pair exactly when the middle of three consecutive gaps is smallest, and obtains probability 1/3 / expectation n/3.",
+      "materiality": "identical",
+      "notes": "This is essentially the frozen circle kernel, including the same proof idea."
+    }
+  ],
+  "coverage_assessment": {
+    "strength": "strong",
+    "gaps": [
+      "The full historical nearest-neighbour literature was not exhaustively reconstructed once exact equivalent results were located.",
+      "Gazette searching was index-based."
+    ],
+    "why_reasonably_strong_or_not": "Both the equivalent line formulation and the wrap-around/circle argument are already documented, with the same answer and spacing proof."
+  },
+  "final_classification": "REDISCOVERY",
+  "classification_rationale": "The n/3 expectation for mutual/reflexive nearest-neighbour pairs in one-dimensional uniform data is established, and a public wrap-around formulation reproduces the circle/local-minimum argument. The mathematical content is already known.",
+  "follow_up_required": [
+    "Do not select. A salvage would need a genuinely different nearest-neighbour statistic or geometry, not the already-merged line/circle variants."
+  ]
+}

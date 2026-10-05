@@ -1,0 +1,149 @@
+{
+  "candidate_id": "CAND-003",
+  "audit_started_on": "2026-10-05",
+  "audit_completed_on": "2026-10-05",
+  "visible_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "pairwise sharing pool split equally everyone exact equal powers of two",
+      "filters_or_scope": null,
+      "result_summary": "Surface wording was less well indexed, but equivalent 'gossip averaging' terminology produced a direct theorem.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "The Mathematical Gazette archive / web index",
+      "query": "Mathematical Gazette pairwise averaging sharing equalise power of two",
+      "filters_or_scope": null,
+      "result_summary": "No exact Gazette Problem Corner hit was located; this does not offset the direct literature result.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Mathematics Stack Exchange / web search",
+      "query": "finite pairwise averaging exact consensus power of two",
+      "filters_or_scope": null,
+      "result_summary": "Returned finite-time consensus discussions pointing toward the established gossip-algorithm theorem.",
+      "promising_hits": []
+    }
+  ],
+  "equivalence_model": {
+    "story_stripped_kernel": "Starting from an arbitrary vector in R^n, repeatedly replace two selected coordinates by their arithmetic mean. Classify n for which some finite sequence of such pairwise-averaging matrices maps every initial vector to the all-equal average vector.",
+    "transformations_checked": [
+      "people's holdings ↔ node states / vector coordinates",
+      "pool and split ↔ symmetric pairwise gossip averaging",
+      "equal holdings ↔ average consensus",
+      "finite sequence of moves ↔ finite product of pair-averaging stochastic matrices"
+    ],
+    "invariants_or_signature": [
+      "dyadic matrix coefficients",
+      "target averaging matrix J/n",
+      "n must be a power of two",
+      "recursive construction for n=2^m"
+    ],
+    "equivalence_notes": "This is standard symmetric finite-time gossip/average consensus with complete freedom to choose interacting pairs."
+  },
+  "equivalent_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Academic literature / arXiv",
+      "query": "finite-time gossip algorithms converge if and only if number nodes power of two",
+      "filters_or_scope": null,
+      "result_summary": "Found Shi, Johansson & Johansson (2012): a symmetric gossip algorithm converges globally in finite time iff n is a power of two.",
+      "promising_hits": [
+        "Guodong Shi, Mikael Johansson, Karl Henrik Johansson, When Do Gossip Algorithms Converge in Finite Time?"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "symmetric gossip pair averaging dyadic coefficients 1/n power of two",
+      "filters_or_scope": null,
+      "result_summary": "Found explanations using the same dyadic-coefficient obstruction and constructive pair schedules.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Distributed consensus literature",
+      "query": "finite product pair averaging matrices exact average consensus complete graph",
+      "filters_or_scope": null,
+      "result_summary": "Confirmed the candidate belongs to an established finite-time consensus problem class rather than a new sharing puzzle.",
+      "promising_hits": []
+    }
+  ],
+  "source_classes": [
+    {
+      "class": "The Mathematical Gazette / Problem Corner archive",
+      "searched": true,
+      "notes": "Targeted Cambridge Core, Taylor & Francis and web-index searches were run for the candidate surface and stripped kernel; no exact Gazette Problem Corner hit was found unless noted in findings."
+    },
+    {
+      "class": "Other mathematical problem journals / problem archives",
+      "searched": true,
+      "notes": "Targeted problem-archive and mathematical Q&A searches were used where the elementary formulation made them likely to surface prior art."
+    },
+    {
+      "class": "Olympiad and contest problem collections",
+      "searched": false,
+      "notes": "Not a priority source class after stronger, directly equivalent research/Q&A prior art was found; omission is deliberate."
+    },
+    {
+      "class": "Recreational mathematics collections and books",
+      "searched": false,
+      "notes": "Not searched exhaustively; stronger source classes supplied decisive evidence or the mechanism was better indexed in research literature."
+    },
+    {
+      "class": "General mathematical literature",
+      "searched": true,
+      "notes": "Scholarly and general web searches were run using story-stripped terminology and theorem signatures."
+    },
+    {
+      "class": "Mathematics Stack Exchange",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent elementary formulations."
+    },
+    {
+      "class": "MathOverflow",
+      "searched": false,
+      "notes": "Not a high-yield class for this candidate; omission is deliberate."
+    },
+    {
+      "class": "OEIS",
+      "searched": false,
+      "notes": "Not naturally sequence-led or no distinctive sequence was needed for the audit."
+    },
+    {
+      "class": "Searchable web",
+      "searched": true,
+      "notes": "Multiple visible and equivalent-form phrasings were searched and promising hits were inspected."
+    },
+    {
+      "class": "Academic papers",
+      "searched": true,
+      "notes": "Relevant papers/abstracts were inspected where the kernel belongs to an established field."
+    }
+  ],
+  "findings": [
+    {
+      "source": "Guodong Shi, Mikael Johansson and Karl Henrik Johansson, When Do Gossip Algorithms Converge in Finite Time?",
+      "url_or_citation": "https://arxiv.org/abs/1206.0992",
+      "relationship": "Defines symmetric gossip by pairwise averaging and proves global finite-time convergence exists iff the number of nodes is a power of two.",
+      "materiality": "identical",
+      "notes": "After people/holdings are translated to nodes/states, this is exactly the frozen classification question; the same dyadic obstruction is central."
+    }
+  ],
+  "coverage_assessment": {
+    "strength": "strong",
+    "gaps": [
+      "No exhaustive recreational-book search was needed after an exact research theorem was found.",
+      "Gazette archive coverage remained index-based."
+    ],
+    "why_reasonably_strong_or_not": "A named research literature contains the exact operation, quantifiers and iff classification. The surface story cannot create novelty."
+  },
+  "final_classification": "REDISCOVERY",
+  "classification_rationale": "The frozen candidate is finite-time symmetric gossip averaging on a complete graph. The power-of-two iff theorem is established in the consensus literature.",
+  "follow_up_required": [
+    "Do not select. Any salvage must change the mathematical operation or target, not merely present gossip averaging as money sharing."
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "candidate_id": "CAND-006",
+  "audit_started_on": "2026-10-05",
+  "audit_completed_on": "2026-10-05",
+  "visible_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "n people each choose k others guarantee mutual choice smallest k",
+      "filters_or_scope": null,
+      "result_summary": "Found established 'mutual choices' formulations and, after stripping the story, the standard digraph 2-cycle count.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "The Mathematical Gazette archive / web index",
+      "query": "Mathematical Gazette mutual choices cards reciprocal choice threshold",
+      "filters_or_scope": null,
+      "result_summary": "No exact Gazette Problem Corner hit was located.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Problem / graph theory search",
+      "query": "reciprocal selections minimum k guarantee pair choose each other",
+      "filters_or_scope": null,
+      "result_summary": "Results reduce immediately to a simple directed-graph extremal statement.",
+      "promising_hits": []
+    }
+  ],
+  "equivalence_model": {
+    "story_stripped_kernel": "A simple digraph on n vertices has outdegree exactly k at every vertex. Determine the least k forcing a directed 2-cycle. If no 2-cycle exists, at most one arc lies over each unordered vertex pair, hence nk<=C(n,2); regular/near-regular tournament orientations give sharp examples.",
+    "transformations_checked": [
+      "people ↔ vertices",
+      "choices/cards ↔ directed arcs",
+      "mutual choice ↔ directed 2-cycle",
+      "no reciprocity ↔ orientation of a simple graph / tournament substructure",
+      "cyclic seating construction ↔ regular or near-regular tournament orientation"
+    ],
+    "invariants_or_signature": [
+      "arc count nk",
+      "at most C(n,2) arcs without a 2-cycle",
+      "threshold k=ceil(n/2)",
+      "regular/cyclic tournament sharpness"
+    ],
+    "equivalence_notes": "This is precisely the r>=n/2 trivial 2-cycle case surrounding the Caccetta-Häggkvist framework, with a standard tournament construction for sharpness."
+  },
+  "equivalent_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Academic graph theory search",
+      "query": "minimum outdegree n/2 forces 2-cycle simple digraph",
+      "filters_or_scope": null,
+      "result_summary": "Found literature explicitly noting that for r>=n/2 the short-cycle statement is trivial because at least n^2/2 arcs exceed C(n,2), forcing a 2-cycle.",
+      "promising_hits": [
+        "Oriented bipartite graphs and the Goldbach graph, Discrete Mathematics 344 (2021)"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "regular tournament outdegree floor((n-1)/2) no 2-cycle construction",
+      "filters_or_scope": null,
+      "result_summary": "Confirmed standard regular/near-regular tournament orientations supply the sharp no-reciprocity examples.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Mutual choices literature",
+      "query": "group n persons each chooses k other persons mutual choices",
+      "filters_or_scope": null,
+      "result_summary": "Found prior work using essentially the same people/choice surface, though often probabilistic rather than the frozen worst-case threshold.",
+      "promising_hits": []
+    }
+  ],
+  "source_classes": [
+    {
+      "class": "The Mathematical Gazette / Problem Corner archive",
+      "searched": true,
+      "notes": "Targeted Cambridge Core, Taylor & Francis and web-index searches were run for the candidate surface and stripped kernel; no exact Gazette Problem Corner hit was found unless noted in findings."
+    },
+    {
+      "class": "Other mathematical problem journals / problem archives",
+      "searched": true,
+      "notes": "Targeted problem-archive and mathematical Q&A searches were used where the elementary formulation made them likely to surface prior art."
+    },
+    {
+      "class": "Olympiad and contest problem collections",
+      "searched": true,
+      "notes": "Targeted contest/problem-collection searches were run."
+    },
+    {
+      "class": "Recreational mathematics collections and books",
+      "searched": true,
+      "notes": "Targeted recreational/book searches were run."
+    },
+    {
+      "class": "General mathematical literature",
+      "searched": true,
+      "notes": "Scholarly and general web searches were run using story-stripped terminology and theorem signatures."
+    },
+    {
+      "class": "Mathematics Stack Exchange",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent elementary formulations."
+    },
+    {
+      "class": "MathOverflow",
+      "searched": false,
+      "notes": "Not a high-yield class for this candidate; omission is deliberate."
+    },
+    {
+      "class": "OEIS",
+      "searched": false,
+      "notes": "Not naturally sequence-led or no distinctive sequence was needed for the audit."
+    },
+    {
+      "class": "Searchable web",
+      "searched": true,
+      "notes": "Multiple visible and equivalent-form phrasings were searched and promising hits were inspected."
+    },
+    {
+      "class": "Academic papers",
+      "searched": true,
+      "notes": "Relevant papers/abstracts were inspected where the kernel belongs to an established field."
+    }
+  ],
+  "findings": [
+    {
+      "source": "Oriented bipartite graphs and the Goldbach graph, Discrete Mathematics 344 (2021)",
+      "url_or_citation": "https://doi.org/10.1016/j.disc.2021.112497",
+      "relationship": "In discussion of Caccetta-Häggkvist, explicitly notes the r>=n/2 case is trivial: the number of arcs exceeds C(n,2), hence a 2-cycle exists.",
+      "materiality": "identical",
+      "notes": "For integer k, this is exactly the frozen forcing argument k>=ceil(n/2). Standard tournament orientations show sharpness immediately below the threshold."
+    }
+  ],
+  "coverage_assessment": {
+    "strength": "strong",
+    "gaps": [
+      "No exhaustive history of 'mutual choices' recreational formulations was needed after the stripped theorem was located."
+    ],
+    "why_reasonably_strong_or_not": "The mathematical kernel is a textbook-level directed-graph counting fact explicitly recorded in the literature, and its sharpness construction is standard."
+  },
+  "final_classification": "REDISCOVERY",
+  "classification_rationale": "After people are replaced by vertices, the frozen threshold is exactly the standard 2-cycle forcing count for minimum/fixed outdegree around n/2. The social story does not create a new theorem.",
+  "follow_up_required": [
+    "Do not select. A salvage would need a materially different reciprocity statistic or constraint, not a relabeling of the digraph."
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "candidate_id": "CAND-010",
+  "audit_started_on": "2026-10-05",
+  "audit_completed_on": "2026-10-05",
+  "visible_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Web search",
+      "query": "houses road maximize sum nearest neighbour distances fixed endpoints",
+      "filters_or_scope": null,
+      "result_summary": "No exact match to the frozen one-dimensional fixed-span theorem n/(n-1) was located. Results tended to general facility-dispersion or unrelated nearest-neighbour questions.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "The Mathematical Gazette archive / web index",
+      "query": "Mathematical Gazette nearest neighbour distances points line maximum sum fixed endpoints",
+      "filters_or_scope": null,
+      "result_summary": "No exact Gazette/Problem Corner item was found in indexed searching; this is a coverage note, not proof of novelty.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Problem/Q&A search",
+      "query": "points interval endpoints fixed sum distance to nearest other point maximum",
+      "filters_or_scope": null,
+      "result_summary": "Targeted MSE/MO/problem-source searches did not surface the exact formula or gap/total-variation proof.",
+      "promising_hits": []
+    }
+  ],
+  "equivalence_model": {
+    "story_stripped_kernel": "Choose n distinct points x_1<...<x_n on an interval with x_n-x_1=1. Maximize sum_i min_{j!=i}|x_i-x_j|. In gaps d_i=x_{i+1}-x_i, the objective is d_1+d_m+sum min(d_i,d_{i+1}); the claimed sharp value is n/(n-1), attained by equal gaps.",
+    "transformations_checked": [
+      "houses on a road ↔ ordered points on an interval",
+      "nearest household distance ↔ pointwise nearest-neighbour separation",
+      "fixed outer houses one mile apart ↔ normalized diameter/span 1",
+      "positions ↔ positive gap vector summing to 1",
+      "objective ↔ sum-min / remote-pseudoforest diversity functional"
+    ],
+    "invariants_or_signature": [
+      "sum of pointwise nearest-neighbour distances",
+      "one-dimensional ordered metric",
+      "fixed span/diameter 1",
+      "sharp value n/(n-1)",
+      "equal spacing equality case",
+      "gap minima / total variation identity"
+    ],
+    "equivalence_notes": "The objective itself is established in diversity/facility-location literature as sum-min or remote-pseudoforest, but the frozen feasible set is a continuous one-dimensional fixed-span configuration problem rather than selection from a finite data set."
+  },
+  "equivalent_form_searches": [
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Academic literature",
+      "query": "remote-pseudoforest sum distance each point nearest neighbor diversity maximization",
+      "filters_or_scope": null,
+      "result_summary": "Found established diversity-maximization literature naming exactly the objective; Mahabadi & Narayanan (2023) treat remote-pseudoforest among standard diversity measures.",
+      "promising_hits": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.APPROX/RANDOM.2023.25"
+      ]
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Facility-location / dispersion search",
+      "query": "Max-SumMin dispersion p-defense-sum nearest neighbor sum",
+      "filters_or_scope": null,
+      "result_summary": "Found the objective under Max-SumMin / p-defense-sum / remote-pseudoforest terminology; literature mostly selects k items from a given metric set and does not give the frozen continuous interval theorem.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Exact formula search",
+      "query": "\"n/(n-1)\" \"nearest neighbor\" points interval",
+      "filters_or_scope": null,
+      "result_summary": "No matching theorem for the frozen statistic/formula was found in indexed results.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Gap inequality search",
+      "query": "sum min consecutive gaps fixed sum maximum nearest neighbor distances",
+      "filters_or_scope": null,
+      "result_summary": "No exact prior statement or total-variation proof was located.",
+      "promising_hits": []
+    },
+    {
+      "searched_on": "2026-10-05",
+      "source_or_engine": "Problem journal / Q&A search",
+      "query": "maximum sum nearest-neighbor distances points on line endpoints distance 1",
+      "filters_or_scope": null,
+      "result_summary": "No exact problem or answer was located after alternative phrasings.",
+      "promising_hits": []
+    }
+  ],
+  "source_classes": [
+    {
+      "class": "The Mathematical Gazette / Problem Corner archive",
+      "searched": true,
+      "notes": "Cambridge Core/Taylor & Francis/web-index searches for nearest-neighbour spacing, points on a line, and fixed-span extremal formulations produced no exact target-journal hit."
+    },
+    {
+      "class": "Other mathematical problem journals / problem archives",
+      "searched": true,
+      "notes": "Targeted problem/Q&A searches were run for fixed-span point placement, gap formulations and the formula n/(n-1); no exact hit was found."
+    },
+    {
+      "class": "Olympiad and contest problem collections",
+      "searched": true,
+      "notes": "Targeted problem-collection/AoPS-style searches for fixed-endpoint line placements and total nearest-neighbour distance did not produce the exact theorem."
+    },
+    {
+      "class": "Recreational mathematics collections and books",
+      "searched": true,
+      "notes": "Targeted recreational/book searches were run."
+    },
+    {
+      "class": "General mathematical literature",
+      "searched": true,
+      "notes": "Searched nearest-neighbour geometry plus the established sum-min / remote-pseudoforest / p-defense-sum terminology."
+    },
+    {
+      "class": "Mathematics Stack Exchange",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent elementary formulations."
+    },
+    {
+      "class": "MathOverflow",
+      "searched": true,
+      "notes": "Targeted searches were run for equivalent research-level formulations."
+    },
+    {
+      "class": "OEIS",
+      "searched": false,
+      "notes": "Not naturally sequence-led or no distinctive sequence was needed for the audit."
+    },
+    {
+      "class": "Searchable web",
+      "searched": true,
+      "notes": "Multiple visible and equivalent-form phrasings were searched and promising hits were inspected."
+    },
+    {
+      "class": "Academic papers",
+      "searched": true,
+      "notes": "Relevant papers/abstracts were inspected where the kernel belongs to an established field."
+    }
+  ],
+  "findings": [
+    {
+      "source": "Sepideh Mahabadi and Shyam Narayanan, Improved Diversity Maximization Algorithms for Matching and Pseudoforest, APPROX/RANDOM 2023",
+      "url_or_citation": "https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2023.25",
+      "relationship": "Places 'remote-pseudoforest' among established diversity objectives; the objective is the sum, over selected points, of distance to the nearest other selected point.",
+      "materiality": "related",
+      "notes": "This establishes the statistic as known, but the paper's setting is selecting a subset from a supplied metric data set and does not supply the frozen continuous interval extremal formula."
+    },
+    {
+      "source": "Max-SumMin / p-defense-sum dispersion literature",
+      "url_or_citation": null,
+      "relationship": "Facility-location/diversity literature studies maximizing the sum of nearest-neighbour separations under discrete selection constraints.",
+      "materiality": "related",
+      "notes": "Same objective family, materially different feasible set and problem statement. No source found gave n/(n-1) for n freely placed points of fixed span."
+    },
+    {
+      "source": "Targeted exact-form searches",
+      "url_or_citation": null,
+      "relationship": "Searches for n/(n-1), equal spacing, fixed interval endpoints, gap minima and total variation did not return a materially equivalent theorem.",
+      "materiality": "none",
+      "notes": "A failed search is not originality proof; this finding only records the absence of a located exact match after the stated search programme."
+    }
+  ],
+  "coverage_assessment": {
+    "strength": "reasonably_strong",
+    "gaps": [
+      "An elementary fixed-span line result could exist in an unindexed problem book, contest archive or old journal note.",
+      "The general remote-pseudoforest / p-defense-sum literature is large and was sampled around definitions and modern references, not exhaustively read.",
+      "Gazette historical searching was index-based rather than page-by-page.",
+      "A future exact-form Stage-5 re-audit is still required before any publication-level originality claim."
+    ],
+    "why_reasonably_strong_or_not": "The audit deliberately used both the obvious nearest-neighbour wording and the established optimization names for the same statistic, plus exact formula/gap searches. It found genuine related literature but no materially equivalent fixed-span one-dimensional theorem. That is enough for CLEAR_WITH_RELATED_PRIOR_ART, not CLEAR."
+  },
+  "final_classification": "CLEAR_WITH_RELATED_PRIOR_ART",
+  "classification_rationale": "The sum of nearest-neighbour distances is an established optimization/diversity objective, so this candidate cannot be called isolated from prior art. However, the audit found no source posing or proving the frozen continuous one-dimensional problem with fixed outer span, sharp value n/(n-1), equal-spacing equality case, or the gap/total-variation proof. The novelty position is therefore defensible but qualified.",
+  "follow_up_required": [
+    "Stage 5 should run a final exact-form prior-art audit using remote-pseudoforest, sum-min dispersion and p-defense-sum terminology together with the canonical final statement.",
+    "If deeper literature reveals the exact fixed-span line theorem, demote immediately rather than defend the surface story."
+  ]
+}

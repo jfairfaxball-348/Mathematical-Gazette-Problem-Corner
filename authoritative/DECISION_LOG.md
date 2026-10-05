@@ -64,3 +64,12 @@ Record only project-level decisions that affect objectives, stage order, evidenc
 **Frozen set:** CAND-001 through CAND-010 in `candidates/serious-candidates.jsonl`.  
 **Consequence:** Stage 4 is unlocked but was not begun in the Stage-3 session. Stage 4 must audit all ten candidates before any primary candidate is selected. Stage 5 remains locked.  
 **Novelty caution:** Stage-3 originality scores are risk estimates only; no candidate has yet received a Stage-4 novelty classification.
+
+## D011 — Stage 4 passed; CAND-010 selected primary, CAND-005 reserve
+
+**Date:** 2026-10-05  
+**Decision:** Pass the Stage-4 prior-art / novelty gate after documented audits of all ten frozen Stage-3 candidates. Select **CAND-010 — How far is everyone’s nearest neighbour?** as the primary Stage-5 candidate and **CAND-005 — Which scenic villages survive?** as the sole reserve.  
+**Evidence:** Complete schema-conforming records are in `prior-art/audits/` and the cross-candidate comparison is in `prior-art/STAGE4_SUMMARY.md`. Final classifications are: CAND-001, 002, 003, 004, 006, 007 and 009 `REDISCOVERY`; CAND-008 `TOO_CLOSE_TO_EXISTING_PROBLEM`; CAND-005 and CAND-010 `CLEAR_WITH_RELATED_PRIOR_ART`.  
+**Selection rationale:** CAND-010 combines a very accessible statement, a non-obvious sharp extremum and a substantive elementary gap/total-variation solution. Its objective has established remote-pseudoforest / sum-min prior art, but the audit did not locate the exact fixed-span one-dimensional theorem. CAND-005 survives as reserve because the specific arbitrary-order deletion/confluence formulation was not found, although its local-extrema normal form has closer established prior art.  
+**Consequence:** Stage 5 is unlocked but was not begun in the Stage-4 session. Rediscoveries and the too-close rounding candidate are excluded from selection. Stage-4 clearance is evidence, not proof, of originality; Stage 5 must run the required final prior-art audit on the exact finished formulation.  
+**Unchanged constraints:** Publication target, central design principle, five-stage order, ten candidate-quality dimensions and novelty standards remain unchanged.

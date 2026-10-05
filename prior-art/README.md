@@ -1,6 +1,22 @@
 # Stage 4 Prior-Art / Novelty Audits
 
-This directory remains locked until Stage 3 freezes the serious candidate set.
+**Stage 4 passed on 2026-10-05 (D011).**
+
+The ten frozen Stage-3 candidates were audited individually under `prior-art-audit.schema.json`.
+
+Complete records:
+- `audits/CAND-001.json`
+- `audits/CAND-002.json`
+- `audits/CAND-003.json`
+- `audits/CAND-004.json`
+- `audits/CAND-005.json`
+- `audits/CAND-006.json`
+- `audits/CAND-007.json`
+- `audits/CAND-008.json`
+- `audits/CAND-009.json`
+- `audits/CAND-010.json`
+
+Cross-candidate synthesis and selection are in `STAGE4_SUMMARY.md`.
 
 ## Core principle
 
@@ -14,37 +30,20 @@ and:
 
 Only the second is useful evidence. Even then, novelty is not mathematically “proved” merely because searches returned nothing.
 
-## Audit scope
+## Frozen Stage-4 outcome
 
-Every serious Stage-3 candidate receives an audit using `prior-art-audit.schema.json`.
+- CAND-001 — `REDISCOVERY`
+- CAND-002 — `REDISCOVERY`
+- CAND-003 — `REDISCOVERY`
+- CAND-004 — `REDISCOVERY`
+- CAND-005 — `CLEAR_WITH_RELATED_PRIOR_ART`
+- CAND-006 — `REDISCOVERY`
+- CAND-007 — `REDISCOVERY`
+- CAND-008 — `TOO_CLOSE_TO_EXISTING_PROBLEM`
+- CAND-009 — `REDISCOVERY`
+- CAND-010 — `CLEAR_WITH_RELATED_PRIOR_ART`
 
-Search both:
+Primary: **CAND-010**.  
+Reserve: **CAND-005**.
 
-1. the visible/story formulation; and
-2. mathematically equivalent formulations after stripping away names, objects, and narrative.
-
-Source classes should include, as relevant:
-
-- the Mathematical Gazette archive;
-- other problem journals and problem archives;
-- olympiad/problem collections;
-- books and recreational-mathematics sources;
-- OEIS where sequence data is material;
-- Mathematics Stack Exchange;
-- MathOverflow where appropriate;
-- general mathematical literature/search.
-
-Not every source class will be relevant to every candidate, but omissions should be reasoned rather than accidental.
-
-## Classification
-
-Use exactly one final classification:
-
-- `CLEAR`
-- `CLEAR_WITH_RELATED_PRIOR_ART`
-- `MATERIAL_PRIOR_ART_POSSIBLY_SALVAGEABLE`
-- `REDISCOVERY`
-- `TOO_CLOSE_TO_EXISTING_PROBLEM`
-- `NOVELTY_UNCERTAIN`
-
-A `CLEAR` classification means no material prior art was found after a documented, reasonably strong investigation; it is not a proof that no prior art exists.
+A `CLEAR_WITH_RELATED_PRIOR_ART` result is not proof of originality. Stage 5 must re-audit the exact final formulation before a publication-ready package can pass.
