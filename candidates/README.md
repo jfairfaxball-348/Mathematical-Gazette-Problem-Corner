@@ -8,6 +8,8 @@ Stage 2 was closed on 2026-10-05 by explicit human override (decision D009) at 2
 
 Use `candidate.schema.json` for every serious candidate. A story alone is not a serious candidate: the record must contain a credible mathematical kernel, expected result, and plausible solution mechanism.
 
+Current structured serious records are stored one JSON object per line in `serious-candidates.jsonl`. The exploration/rejection ledger and mathematical validation notes are in `STAGE3_DISCOVERY_NOTES.md`.
+
 Do not pad the pool to reach a numerical target. “Up to roughly 50” is a diversity ceiling/ambition, not a quota.
 
 ## Discovery discipline
