@@ -40,7 +40,7 @@ Pass only when:
 - [x] Corpus limitations and access gaps are documented.
 - [x] No serious candidate-generation campaign began before these requirements were met.
 
-Current evidence: 21 solution-reviewed records. The principal unresolved sampling issue is that 20 of 21 are Chris Starr-era; see `research/STAGE2_WORKING_NOTES.md`.
+Current evidence: 23 solution-reviewed records. The principal unresolved sampling issue is that 20 of 23 are still Chris Starr-era; only 3 are Nick Lord-era. The requested older-corpus tranche is incomplete; see `research/STAGE2_WORKING_NOTES.md`.
 
 ## Stage 3 — Discovery
 
