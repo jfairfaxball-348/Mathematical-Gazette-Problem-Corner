@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mathematical Gazette Problem Corner Catalogue Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "catalogue_id",
+    "gazette_problem_identifier",
+    "year",
+    "source",
+    "presentation",
+    "mathematics",
+    "solution",
+    "editorial_fit",
+    "review_metadata"
+  ],
+  "properties": {
+    "catalogue_id": {"type": "string", "minLength": 1},
+    "gazette_problem_identifier": {"type": ["string", "null"]},
+    "year": {"type": ["integer", "null"]},
+    "volume": {"type": ["integer", "null"]},
+    "issue": {"type": ["string", "integer", "null"]},
+    "publication_date": {"type": ["string", "null"]},
+    "proposer": {"type": ["string", "null"]},
+    "editor": {"type": ["string", "null"]},
+    "source": {
+      "type": "object",
+      "required": ["citation_or_title", "url", "accessed_on", "access_status"],
+      "properties": {
+        "citation_or_title": {"type": "string"},
+        "url": {"type": ["string", "null"]},
+        "doi": {"type": ["string", "null"]},
+        "accessed_on": {"type": "string"},
+        "access_status": {"enum": ["full", "partial", "metadata_only", "unknown"]},
+        "source_notes": {"type": ["string", "null"]}
+      }
+    },
+    "statement_text": {"type": ["string", "null"]},
+    "faithful_summary": {"type": ["string", "null"]},
+    "presentation": {
+      "type": "object",
+      "required": ["abstract_vs_contextual", "everyday_qualitative_framing", "approx_statement_words", "prerequisite_level", "apparent_difficulty"],
+      "properties": {
+        "abstract_vs_contextual": {"enum": ["abstract", "light_context", "everyday_context", "mixed", "unclear"]},
+        "everyday_qualitative_framing": {"type": ["string", "null"]},
+        "surface_scenario": {"type": ["string", "null"]},
+        "approx_statement_words": {"type": ["integer", "null"], "minimum": 0},
+        "prerequisite_level": {"type": ["string", "null"]},
+        "apparent_difficulty": {"type": ["string", "null"]},
+        "specialist_vocabulary_load": {"enum": ["none", "low", "moderate", "high", "unknown"]}
+      }
+    },
+    "mathematics": {
+      "type": "object",
+      "required": ["area", "underlying_mechanism", "source_of_surprise"],
+      "properties": {
+        "area": {"type": ["array", "null"], "items": {"type": "string"}},
+        "underlying_mechanism": {"type": ["array", "null"], "items": {"type": "string"}},
+        "source_of_surprise": {"type": ["string", "null"]},
+        "key_objects_or_structures": {"type": ["array", "null"], "items": {"type": "string"}}
+      }
+    },
+    "solution": {
+      "type": "object",
+      "required": ["method", "approx_solution_words", "multiple_solutions_discussed"],
+      "properties": {
+        "method": {"type": ["array", "null"], "items": {"type": "string"}},
+        "solution_summary": {"type": ["string", "null"]},
+        "approx_solution_words": {"type": ["integer", "null"], "minimum": 0},
+        "multiple_solutions_discussed": {"type": ["boolean", "null"]},
+        "alternate_methods": {"type": ["array", "null"], "items": {"type": "string"}},
+        "editor_commentary": {"type": ["string", "null"]}
+      }
+    },
+    "editorial_fit": {
+      "type": "object",
+      "required": ["features_worth_emulating", "features_not_worth_emulating", "gazette_fit_notes"],
+      "properties": {
+        "features_worth_emulating": {"type": "array", "items": {"type": "string"}},
+        "features_not_worth_emulating": {"type": "array", "items": {"type": "string"}},
+        "gazette_fit_notes": {"type": ["string", "null"]},
+        "contrast_notes": {"type": ["string", "null"]}
+      }
+    },
+    "review_metadata": {
+      "type": "object",
+      "required": ["reviewed_on", "reviewer", "confidence"],
+      "properties": {
+        "reviewed_on": {"type": "string"},
+        "reviewer": {"type": "string"},
+        "confidence": {"enum": ["high", "medium", "low"]},
+        "open_questions": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

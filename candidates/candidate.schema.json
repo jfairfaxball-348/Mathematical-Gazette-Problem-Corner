@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage-3 Serious Candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "working_title",
+    "concept",
+    "reader_facing_statement",
+    "mathematical_kernel",
+    "expected_answer",
+    "solution_mechanism",
+    "surprise",
+    "likely_difficulty",
+    "accessibility",
+    "experimentability",
+    "potential_failure_modes",
+    "similarity_risks",
+    "gazette_fit_assessment",
+    "diversity",
+    "status"
+  ],
+  "properties": {
+    "candidate_id": {"type": "string"},
+    "working_title": {"type": "string"},
+    "concept": {"type": "string"},
+    "reader_facing_statement": {"type": "string"},
+    "informal_example": {"type": ["string", "null"]},
+    "mathematical_kernel": {"type": "string"},
+    "expected_answer": {"type": "string"},
+    "solution_mechanism": {"type": "array", "items": {"type": "string"}},
+    "surprise": {"type": "string"},
+    "likely_difficulty": {"type": "string"},
+    "accessibility": {"type": "string"},
+    "experimentability": {"type": "string"},
+    "potential_failure_modes": {"type": "array", "items": {"type": "string"}},
+    "similarity_risks": {"type": "array", "items": {"type": "string"}},
+    "gazette_fit_assessment": {"type": "string"},
+    "rubric_scores": {
+      "type": ["object", "null"],
+      "properties": {
+        "immediate_comprehensibility": {"type": "integer", "minimum": 1, "maximum": 5},
+        "puzzle_appeal": {"type": "integer", "minimum": 1, "maximum": 5},
+        "surprise": {"type": "integer", "minimum": 1, "maximum": 5},
+        "mathematical_depth": {"type": "integer", "minimum": 1, "maximum": 5},
+        "solution_elegance": {"type": "integer", "minimum": 1, "maximum": 5},
+        "statement_economy": {"type": "integer", "minimum": 1, "maximum": 5},
+        "experimentability": {"type": "integer", "minimum": 1, "maximum": 5},
+        "accessibility": {"type": "integer", "minimum": 1, "maximum": 5},
+        "originality": {"type": "integer", "minimum": 1, "maximum": 5},
+        "gazette_fit": {"type": "integer", "minimum": 1, "maximum": 5},
+        "notes": {"type": "string"}
+      }
+    },
+    "diversity": {
+      "type": "object",
+      "required": ["surface_family", "mechanism_family", "question_form", "closest_candidate_ids", "variant_assessment"],
+      "properties": {
+        "surface_family": {"type": "string"},
+        "mechanism_family": {"type": "array", "items": {"type": "string"}},
+        "question_form": {"type": "string"},
+        "randomness_role": {"type": ["string", "null"]},
+        "representation": {"type": ["string", "null"]},
+        "expected_solution_shape": {"type": ["string", "null"]},
+        "closest_candidate_ids": {"type": "array", "items": {"type": "string"}},
+        "variant_assessment": {"type": "string"}
+      }
+    },
+    "validation_notes": {"type": ["string", "null"]},
+    "status": {
+      "enum": [
+        "SEED",
+        "SERIOUS",
+        "NEEDS_VALIDATION",
+        "REJECTED",
+        "MERGED_VARIANT",
+        "FROZEN_FOR_STAGE_4"
+      ]
+    }
+  }
+}
