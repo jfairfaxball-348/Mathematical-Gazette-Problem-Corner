@@ -1,37 +1,34 @@
 # Stage 3 Candidate Workspace
 
-**Stage 3 is active.**
+**Stage 3 passed on 2026-10-05. The serious set is frozen for Stage 4.**
 
-Stage 2 was closed on 2026-10-05 by explicit human override (decision D009) at 23 solution-reviewed catalogue records. The ordinary Stage-2 gate did not pass, so the editorial evidence carried into this workspace is useful but incomplete and sampling-biased. Do not overstate it.
+Stage 2 was closed by explicit human override (D009) at 23 solution-reviewed catalogue records. Its ordinary gate did not pass, so the editorial evidence used during discovery was useful but incomplete and sampling-biased.
 
-## Serious candidate records
+## Frozen serious records
 
-Use `candidate.schema.json` for every serious candidate. A story alone is not a serious candidate: the record must contain a credible mathematical kernel, expected result, and plausible solution mechanism.
+The complete Stage-3 set is stored one JSON object per line in `serious-candidates.jsonl`.
 
-Current structured serious records are stored one JSON object per line in `serious-candidates.jsonl`. The exploration/rejection ledger and mathematical validation notes are in `STAGE3_DISCOVERY_NOTES.md`.
+There are **10** frozen candidates, each with status `FROZEN_FOR_STAGE_4`.
 
-Do not pad the pool to reach a numerical target. “Up to roughly 50” is a diversity ceiling/ambition, not a quota.
+The exploration, rejection, merge and validation ledger is in `STAGE3_DISCOVERY_NOTES.md`. The final diversity profile is in `DIVERSITY_TRACKER.md`.
 
-## Discovery discipline
+Do not add cosmetic variants or casually append new candidates after freeze. If Stage 3 genuinely needs reopening, record the reason and reconcile the authority files.
 
-Generate broadly across surface families, mathematical mechanisms and question forms before converging. Do not choose a preferred mathematical field in advance.
+## What Stage 3 established — and did not establish
+
+Stage 3 established that every frozen candidate has:
+- a clear reader-facing formulation;
+- a mathematical kernel and expected answer;
+- a credible solution mechanism;
+- basic soundness checks;
+- a ten-dimension rubric assessment with written reasons;
+- explicit surface/mechanism diversity metadata;
+- stated similarity and failure risks.
+
+Stage 3 did **not** establish originality.
+
+The originality scores in candidate records are provisional risk judgements only. Formal visible-form and mathematical-equivalence prior-art work belongs to Stage 4 and must use `prior-art/prior-art-audit.schema.json`.
 
 The frozen design principle remains:
 
 > **simple situation → natural question → unexpected answer → elegant mathematics**
-
-Basic mathematical validation belongs in Stage 3. Formal prior-art / novelty auditing does not: similarity risks may be noted, but Stage-4 novelty claims must wait until the serious set is frozen.
-
-## Diversity control
-
-Maintain `DIVERSITY_TRACKER.md` as the pool grows.
-
-Two candidates that differ only by renamed objects, superficial story, notation, or inessential constants count as one idea family until a genuinely different mathematical question or mechanism is shown.
-
-Before promoting a new item to serious-candidate status, compare it against the existing pool on both **surface family** and **mechanism family**. Near-duplicates should be merged, marked as variants, or rejected rather than counted separately.
-
-## Rubric
-
-Use all ten dimensions in `docs/CANDIDATE_QUALITY_RUBRIC.md`. Stage-3 scoring must be accompanied by brief written reasoning; do not reduce selection to arithmetic.
-
-A candidate with fatal mathematical weakness, no credible solution route, severe accessibility problems or obvious derivative risk should not survive merely because its total score is high.
