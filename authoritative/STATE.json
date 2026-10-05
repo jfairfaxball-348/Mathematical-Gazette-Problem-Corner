@@ -9,11 +9,14 @@
     "close_ref": "git HEAD at Stage-1 close"
   },
   "current_stage": {
-    "number": 2,
-    "name": "Research",
+    "number": 3,
+    "name": "Discovery",
     "status": "IN_PROGRESS"
   },
-  "locked_stages": [3, 4, 5],
+  "locked_stages": [
+    4,
+    5
+  ],
   "serious_candidate_discovery_performed": false,
   "design_principle": "simple situation → natural question → unexpected answer → elegant mathematics",
   "stage_2_corpus_target": {
@@ -23,9 +26,17 @@
   "stage_2_progress": {
     "catalogue_records": 23,
     "solution_reviewed_records": 23,
-    "status_note": "Older-corpus tranche has begun with two additional Nick Lord-era records (99.C and 101.L). The corpus remains strongly Chris-Starr-era biased at 20 of 23 and is not sufficient for Stage-2 synthesis."
+    "status_note": "Stage 2 was closed on 2026-10-05 by explicit human override at 23 structured, solution-reviewed records. The ordinary Stage-2 gate was not satisfied: the corpus remained below the roughly-60 target, era-balanced sampling and final synthesis were incomplete, and the older-corpus tranche was unfinished."
   },
-  "next_action": "Continue the older-corpus tranche: add at least 22 more solution-reviewed pre-2024 problems from at least four additional issue contexts, concentrating on 2010-2023 and the Nick Lord period; keep Stage 3 locked.",
+  "next_action": "Begin Stage 3 — Discovery. Generate and mathematically validate a broad, diverse candidate pool using the available Stage-2 evidence, the frozen design principle, candidate schema, diversity tracker, and ten-dimension rubric. Keep Stages 4–5 locked until the Stage-3 gate passes.",
   "authoritative_entrypoint": "authoritative/START_HERE.md",
-  "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md"
+  "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md",
+  "stage_2_closure": {
+    "status": "CLOSED_BY_HUMAN_OVERRIDE",
+    "closed_on": "2026-10-05",
+    "decision_ref": "D009",
+    "ordinary_gate_passed": false,
+    "catalogue_records_at_close": 23,
+    "solution_reviewed_records_at_close": 23
+  }
 }
