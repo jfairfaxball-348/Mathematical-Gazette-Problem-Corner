@@ -1,9 +1,9 @@
 # Stage 2 Working Notes
 
 **As of:** 2026-10-05  
-**Status:** older-corpus tranche started; Stage 2 remains **IN PROGRESS**.
+**Status:** **CLOSED BY EXPLICIT HUMAN OVERRIDE** on 2026-10-05 at 23 solution-reviewed records; ordinary Stage-2 gate not passed.
 
-This is a provisional working note, not the final Stage-2 synthesis and not a Stage-3 design specification.
+This remains a provisional working note, not a completed Stage-2 synthesis and not a Stage-3 design specification. Stage 2 was closed early by decision D009; the limitations below therefore carry forward into Stage 3.
 
 ## Corpus progress
 
@@ -73,21 +73,18 @@ The requested older-corpus tranche is **not complete**. Only 2 of the requested 
 
 Searchability continues to favour recent freely accessible material and isolated institutional deposits. Several older issue contexts can be identified confidently from Cambridge, Taylor & Francis, JSTOR and Mathematical Association/WPR metadata, but solution review must wait until legitimate full published pages are actually accessible. Do not promote metadata-only items into the catalogue.
 
-## Precise next research step
+## Closure and handoff to Stage 3
 
-Continue the same older-corpus tranche. Add **at least 22 more solution-reviewed pre-2024 problems from at least four additional issue contexts**, so that the tranche reaches its original minimum of 24 records across six or more contexts.
+The originally planned older-corpus continuation was not completed. During the closing session, no additional catalogue record was committed; historical archive work continued to encounter gated, preview-only or otherwise non-reviewable solution pages.
 
-Concentrate on non-consecutive sampling across **2010–2023**, especially Nick Lord-era issues, and deliberately seek:
-- contextual/everyday as well as abstract problems;
-- elementary and advanced prerequisites;
-- short and substantial solutions;
-- single-solution and multiple-solution/editor-commentary cases;
-- mathematical areas not already overrepresented by geometry and analysis.
+On 2026-10-05 the user explicitly directed the project to stop spending effort on this blockage and treat the existing progress as sufficient to move to the next stage. Decision D009 records that instruction.
 
-Prefer full Cambridge Core/Taylor & Francis archive pages or PDFs. Where publisher full text is gated, use only legitimate institutional/repository copies that can be verified as the published Gazette pages, and record that provenance explicitly.
+Accordingly:
+- the catalogue closes Stage 2 at **23** solution-reviewed records;
+- the ordinary roughly-60 minimum and balance requirements remain unmet;
+- the older-corpus tranche remains incomplete;
+- no final quantitative/qualitative synthesis, genre comparison or evidence-based Stage-3 design specification was completed;
+- these are known limitations, not hidden assumptions;
+- Stage 3 may proceed using the observations in this file as provisional evidence only.
 
-Also repair exact statements for 110.B and 110.D if legitimate publisher PDF access becomes available.
-
-Even after the remaining 22-record tranche, the corpus would be only about 45 records, so Stage 2 should still remain in progress pending the roughly-60 minimum, balance checks, final synthesis, genre comparison, and evidence-based Stage-3 design specification.
-
-No candidate generation, scoring, preferred-field selection, or novelty audit should begin.
+At the point of handoff, no substantive serious-candidate discovery had yet been performed. Stage 3 should now use the frozen candidate schema, diversity tracker and ten-dimension rubric, while Stages 4–5 remain locked.
