@@ -20,7 +20,7 @@ The research catalogue remains at **23 structured, solution-reviewed Problem Cor
 
 Stage 5 began with the Stage-4 primary **CAND-010 — How far is everyone’s nearest neighbour?**
 
-Its mathematics survived independent re-derivation. For ordered positions with positive consecutive gaps summing to the fixed span, the nearest-neighbour total is bounded by the span plus the smallest gap, giving the sharp value (nL/(n-1)). Equality forces every gap to be equal, so equal spacing is the unique maximiser.
+Its mathematics survived independent re-derivation. For ordered positions with positive consecutive gaps summing to the fixed span, the nearest-neighbour total is bounded by the span plus the smallest gap, giving the sharp value \(nL/(n-1)\). Equality forces every gap to be equal, so equal spacing is the unique maximiser.
 
 However, the required final novelty audit located materially equivalent older **linear nearest-neighbour analysis**. That literature uses the same sum of pointwise nearest-neighbour distances on a line and normalises it so that perfectly regular spacing has the extremal score. CAND-010 is therefore retired in Stage 5 as **REDISCOVERY**. The Stage-4 audit remains preserved as the record of what was known at that gate.
 
@@ -36,7 +36,7 @@ The canonical statement asks about repeatedly crossing out an interior village w
 
 The final theorem is that every legal deletion order has the same terminal list: the two endpoint villages together with exactly the original strict local maxima and local minima.
 
-The primary proof encodes successive altitude changes by signs. A legal deletion is exactly the contraction (++	o+) or (--	o-), so every maximal sign-run contracts to one sign and the normal form is unique. A direct maximal-monotone-run proof is retained as a useful alternative.
+The primary proof encodes successive altitude changes by signs. A legal deletion is exactly the contraction \(++\to+\) or \(--\to-\), so every maximal sign-run contracts to one sign and the normal form is unique. A direct maximal-monotone-run proof is retained as a useful alternative.
 
 Exhaustive computation over all **46,232 permutations of lengths 2 through 8**, exploring every legal deletion branch, agreed with the theorem. The proof, not the computation, establishes the general result.
 
@@ -54,7 +54,7 @@ No independent human reader was available during the session. This limitation is
 
 ## Submission package
 
-Prepared in `final/`:
+Prepared in \`final/\`:
 - canonical statement and rigorous primary solution;
 - useful alternative solution;
 - edge-case/adversarial checks;

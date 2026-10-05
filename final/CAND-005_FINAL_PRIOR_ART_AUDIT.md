@@ -1,7 +1,7 @@
 # CAND-005 — Final Exact-Form Prior-Art Audit
 
 **Audit date:** 2026-10-05  
-**Final statement audited:** the frozen wording in `final/CAND-005_FORMALISATION.md`  
+**Final statement audited:** the frozen wording in \`final/CAND-005_FORMALISATION.md\`  
 **Classification:** **CLEAR_WITH_RELATED_PRIOR_ART**
 
 This is a qualified evidence assessment, not proof of originality.
@@ -10,10 +10,10 @@ This is a qualified evidence assessment, not proof of originality.
 
 For a sequence of pairwise distinct real numbers, repeatedly delete any interior term that lies strictly between its two **current** neighbours.
 
-Equivalently, encode consecutive comparisons by a word in (+) and (-). A legal deletion is exactly
-[
-++	o+,qquad --	o-.
-]
+Equivalently, encode consecutive comparisons by a word in \(+\) and \(-\). A legal deletion is exactly
+\[
+++\to+,\qquad --\to-.
+\]
 
 The claim is not merely that an alternating subsequence exists. It is that **every legal asynchronous deletion order reaches the same actual subsequence**, namely the original endpoints plus original local extrema.
 
@@ -26,7 +26,7 @@ The Stage-5 audit searched the final visible wording and variants involving:
 - monotone triples and deleting their middle term;
 - order independence / confluence of the deletion process;
 - endpoints plus local maxima and minima;
-- sign words and contractions (++	o+), (--	o-);
+- sign words and contractions \(++\to+\), \(--\to-\);
 - run compression / run-length encoding;
 - alternating or wiggle subsequences;
 - consecutive monotone triples.
@@ -66,7 +66,7 @@ Material difference: these entries count or classify sequences/partitions with t
 
 ### 4. Generic run compression / rewriting
 
-After the sign encoding, the rules (++	o+) and (--	o-) are a simple terminating rewrite system: every run of identical symbols reduces to one symbol.
+After the sign encoding, the rules \(++\to+\) and \(--\to-\) are a simple terminating rewrite system: every run of identical symbols reduces to one symbol.
 
 This mechanism is elementary and not itself claimed to be new. The proposed Problem Corner contribution is the accessible village process and the observation that its arbitrary choices become this unique run compression.
 
