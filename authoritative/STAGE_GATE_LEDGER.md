@@ -24,21 +24,23 @@ Requirements:
 
 ## Stage 2 — Research
 
-**Status: NOT STARTED.**
+**Status: IN PROGRESS.**
 
 Pass only when:
 
 - [ ] A substantial Problem Corner corpus has been reviewed: at least roughly 60 problems, preferably 80–100.
-- [ ] Published solutions are reviewed as well as problem statements wherever accessible.
-- [ ] Coverage spans multiple years and issues, with deliberate variety of mathematical type and presentation.
-- [ ] Each included item has a structured catalogue record with provenance.
+- [x] Published solutions are reviewed as well as problem statements wherever accessible.
+- [x] Coverage spans multiple years and issues, with deliberate variety of mathematical type and presentation.
+- [x] Each included item has a structured catalogue record with provenance.
 - [ ] The corpus is sufficiently balanced that one era, editor, or mathematical area does not dominate by accident.
 - [ ] A quantitative/qualitative synthesis reports typical statement length, accessibility, prerequisites, difficulty, solution length/style, multiple-solution practice, contextual versus abstract presentation, and recurring mechanisms.
 - [ ] The synthesis identifies common sources of surprise and features worth emulating or avoiding.
 - [ ] The synthesis explicitly contrasts Problem Corner with olympiad exercises, textbook exercises, and generic internet puzzles.
 - [ ] An evidence-based Stage-3 design specification is written.
-- [ ] Corpus limitations and access gaps are documented.
-- [ ] No serious candidate-generation campaign began before these requirements were met.
+- [x] Corpus limitations and access gaps are documented.
+- [x] No serious candidate-generation campaign began before these requirements were met.
+
+Current evidence: 21 solution-reviewed records. The principal unresolved sampling issue is that 20 of 21 are Chris Starr-era; see `research/STAGE2_WORKING_NOTES.md`.
 
 ## Stage 3 — Discovery
 
