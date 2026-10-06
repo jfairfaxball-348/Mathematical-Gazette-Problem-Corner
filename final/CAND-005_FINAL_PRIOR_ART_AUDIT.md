@@ -1,7 +1,7 @@
 # CAND-005 — Final Exact-Form Prior-Art Audit
 
 **Audit date:** 2026-10-05  
-**Final statement audited:** the frozen wording in `final/CAND-005_FORMALISATION.md`  
+**Final mathematical formulation audited:** the current-neighbour strictly-between deletion rule frozen in `final/CAND-005_FORMALISATION.md`  
 **Classification:** **CLEAR_WITH_RELATED_PRIOR_ART**
 
 This is a qualified evidence assessment, not proof of originality.
@@ -101,3 +101,16 @@ The distinction is mathematical rather than cosmetic: confluence of an asynchron
 **CLEAR_WITH_RELATED_PRIOR_ART.**
 
 CAND-005 is suitable to present to the editor with an explicit background note, but it should not be described as proved original. If the editor recognises the exact deletion/confluence problem from prior publication, the submission should yield to that evidence.
+
+
+## Post-audit submitted-wording check
+
+**Date:** 2026-10-06
+
+After human review, the reader-facing story was changed from “cross out an interior village” to a war-and-razing formulation. The mathematical rule is unchanged: a village is eligible exactly when its altitude lies strictly between those of its two current surviving neighbours.
+
+A targeted visible-wording check was run for combinations of villages, invasion/razing, altitude, strict betweenness, neighbours and survival. No materially equivalent formulation was located in that check. This is only a coverage note, not proof of originality.
+
+Because the mathematical kernel is unchanged and the new visible wording produced no new material prior art in the targeted check, the classification remains **CLEAR_WITH_RELATED_PRIOR_ART**.
+
+The submitted wording is the version now frozen in `final/CAND-005_FORMALISATION.md`.
