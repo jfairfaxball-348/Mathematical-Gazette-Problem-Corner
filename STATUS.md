@@ -1,6 +1,6 @@
 # Status
 
-**As of:** 2026-10-05
+**As of:** 2026-10-06
 
 ## Overall
 
@@ -9,8 +9,9 @@
 - Stage 3 — Discovery: **PASSED / COMPLETE**
 - Stage 4 — Prior-art / Novelty Audit: **PASSED / COMPLETE**
 - Stage 5 — Formalisation and Submission Package: **PASSED / COMPLETE**
+- Submission: **SENT BY HUMAN AUTHOR ON 2026-10-06**
 
-Decisions **D012** and **D013** record the Stage-5 candidate switch and final gate pass.
+Decisions **D012** and **D013** record the Stage-5 candidate switch and gate pass. Decision **D014** records the final wording revision and human submission.
 
 ## Stage-2 limitation carried forward
 
@@ -18,56 +19,48 @@ The research catalogue remains at **23 structured, solution-reviewed Problem Cor
 
 ## Stage-5 candidate outcome
 
-Stage 5 began with the Stage-4 primary **CAND-010 — How far is everyone’s nearest neighbour?**
+Stage 5 began with **CAND-010 — How far is everyone’s nearest neighbour?** Its mathematics survived independent re-derivation, but the final novelty audit located materially equivalent older linear nearest-neighbour analysis. CAND-010 was therefore retired as **REDISCOVERY**.
 
-Its mathematics survived independent re-derivation. For ordered positions with positive consecutive gaps summing to the fixed span, the nearest-neighbour total is bounded by the span plus the smallest gap, giving the sharp value \(nL/(n-1)\). Equality forces every gap to be equal, so equal spacing is the unique maximiser.
+The reserve **CAND-005 — Which villages survive?** was promoted and passed Stage 5.
 
-However, the required final novelty audit located materially equivalent older **linear nearest-neighbour analysis**. That literature uses the same sum of pointwise nearest-neighbour distances on a line and normalises it so that perfectly regular spacing has the extremal score. CAND-010 is therefore retired in Stage 5 as **REDISCOVERY**. The Stage-4 audit remains preserved as the record of what was known at that gate.
+## Final submitted problem
 
-Per the reserve rule, **CAND-005 — Which villages survive?** was then promoted.
-
-## Final selected problem
-
-**Selected:** **CAND-005 — Which villages survive?**
+**Selected and submitted:** **CAND-005 — Which villages survive?**
 
 **Reserve:** none.
 
-The canonical statement asks about repeatedly crossing out an interior village whose altitude lies strictly between those of its two neighbours still on the list.
+The final reader-facing wording is deliberately qualitative. A road runs through more than two villages at different altitudes. The villages are perpetually at war. A surviving village may be invaded and razed by the surviving villages immediately before and after it whenever its altitude lies strictly between theirs. When it disappears, its attackers become neighbours.
 
-The final theorem is that every legal deletion order has the same terminal list: the two endpoint villages together with exactly the original strict local maxima and local minima.
+The question asks whether the eventual survivors depend on the order of attacks and which villages ultimately survive.
 
-The primary proof encodes successive altitude changes by signs. A legal deletion is exactly the contraction \(++\to+\) or \(--\to-\), so every maximal sign-run contracts to one sign and the normal form is unique. A direct maximal-monotone-run proof is retained as a useful alternative.
+The theorem is unchanged: every legal attack order produces the same survivors — the first and last villages together with exactly the original local peaks and local valleys.
 
-Exhaustive computation over all **46,232 permutations of lengths 2 through 8**, exploring every legal deletion branch, agreed with the theorem. The proof, not the computation, establishes the general result.
+The editor-facing solution now uses plain-text **UP/DOWN** language rather than mathematical sign notation, so it survives ordinary email copying cleanly.
+
+## Mathematical validation
+
+The UP/DOWN argument is the same run-compression proof previously expressed with plus and minus signs. Every legal attack shortens a continually rising or continually falling stretch; a change from rising to falling or falling to rising cannot disappear.
+
+A maximal-monotone-run proof remains as an alternative validation.
+
+Exhaustive computation over all **46,232 permutations of lengths 2 through 8**, exploring every legal branch, agreed with the theorem. The proof, not the computation, establishes the general result.
 
 ## Final novelty position
 
-CAND-005 is **CLEAR_WITH_RELATED_PRIOR_ART**.
+CAND-005 remains **CLEAR_WITH_RELATED_PRIOR_ART**.
 
-Materially related prior art includes Dan Romik's work showing that local extrema form a canonical longest alternating subsequence, standard wiggle-subsequence algorithms that retain peaks and valleys, and the familiar notion of an alternating/wiggly sequence with no consecutive monotone triple.
+Materially related prior art includes Dan Romik's work showing that local extrema form a canonical longest alternating subsequence and standard wiggle-subsequence material retaining peaks and valleys.
 
-The Stage-5 audit did not locate the exact dynamic problem in which **any currently eligible** middle term may be deleted and every deletion order is proved to reach the same actual subsequence. This supports a qualified submission position only; it does not prove originality.
+The original Stage-5 audit did not locate the exact arbitrary-order current-neighbour deletion/confluence problem. After the story was revised, a targeted visible-wording check for the war-and-razing formulation likewise found no material match. Neither negative search is treated as proof of originality.
 
-## Reader testing
+## Submission
 
-No independent human reader was available during the session. This limitation is explicit. An internal adversarial wording review led to the phrase **“the two neighbouring villages still on the list”**, which removes the main ambiguity after earlier deletions.
+The user confirmed that the proposal was submitted on **2026-10-06** to **Chris Starr**, the Problem Corner editor.
 
-## Submission package
+The repository records this as a **human submission**. ChatGPT did not send the email.
 
-Prepared in \`final/\`:
-- canonical statement and rigorous primary solution;
-- useful alternative solution;
-- edge-case/adversarial checks;
-- computational validation note;
-- exact-form final prior-art audit;
-- editor background/prior-art disclosure;
-- submission-ready package;
-- concise email draft.
+The final submitted wording, solution and background are recorded in `final/SUBMISSION_PACKAGE.md` and the plain-text email version in `final/SUBMISSION_EMAIL.md`.
 
-Current official Problem Corner proposal guidance was rechecked on 2026-10-05. It asks that proposals be sent to Chris Starr with solutions and relevant background information.
+## Next action
 
-**Nothing has been sent.**
-
-## Recommended next action
-
-Human review of the CAND-005 package, especially the qualified novelty disclosure. If satisfied, send the problem, solution and background note to the Problem Corner editor.
+Await the editor's response. Record any reply, prior-art identification, request for revision, acceptance, rejection, or other disposition before changing the final package again.
