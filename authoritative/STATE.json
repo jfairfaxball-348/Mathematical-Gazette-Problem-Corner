@@ -1,102 +1,15 @@
 {
-  "schema_version": "1.0",
-  "project": "Mathematical-Gazette-Problem-Corner",
-  "publication_target": "The Mathematical Gazette — Problem Corner",
+  "schema_version": "2.0",
+  "project": "local-extrema-deletion-dynamics",
+  "mode": "ACTIVE_MATHEMATICAL_RESEARCH",
   "as_of": "2026-10-06",
-  "stage_1": {
-    "status": "PASSED",
-    "completed_on": "2026-10-05",
-    "close_ref": "git HEAD at Stage-1 close"
-  },
-  "stage_2_closure": {
-    "status": "CLOSED_BY_HUMAN_OVERRIDE",
-    "closed_on": "2026-10-05",
-    "decision_ref": "D009",
-    "ordinary_gate_passed": false,
-    "catalogue_records_at_close": 23,
-    "solution_reviewed_records_at_close": 23
-  },
-  "stage_2_progress": {
-    "catalogue_records": 23,
-    "solution_reviewed_records": 23,
-    "status_note": "Stage 2 was closed on 2026-10-05 by explicit human override at 23 structured, solution-reviewed records. The ordinary Stage-2 gate was not satisfied: the corpus remained below the roughly-60 target, era-balanced sampling and final synthesis were incomplete, and the older-corpus tranche was unfinished."
-  },
-  "stage_3": {
-    "status": "PASSED",
-    "completed_on": "2026-10-05",
-    "decision_ref": "D010",
-    "seeds_substantially_explored": 31,
-    "serious_candidates_frozen": 10,
-    "rejected": 17,
-    "merged_variants": 4
-  },
-  "stage_4": {
-    "status": "PASSED",
-    "completed_on": "2026-10-05",
-    "decision_ref": "D011",
-    "audited_candidates": 10,
-    "classifications": {
-      "CAND-001": "REDISCOVERY",
-      "CAND-002": "REDISCOVERY",
-      "CAND-003": "REDISCOVERY",
-      "CAND-004": "REDISCOVERY",
-      "CAND-005": "CLEAR_WITH_RELATED_PRIOR_ART",
-      "CAND-006": "REDISCOVERY",
-      "CAND-007": "REDISCOVERY",
-      "CAND-008": "TOO_CLOSE_TO_EXISTING_PROBLEM",
-      "CAND-009": "REDISCOVERY",
-      "CAND-010": "CLEAR_WITH_RELATED_PRIOR_ART"
-    },
-    "primary_candidate": "CAND-010",
-    "reserve_candidates": [
-      "CAND-005"
-    ]
-  },
-  "current_stage": {
-    "number": 5,
-    "name": "Formalisation and Submission Package",
-    "status": "PASSED_COMPLETE"
-  },
-  "locked_stages": [],
-  "serious_candidate_discovery_performed": true,
-  "stage_4_audit_started": true,
-  "design_principle": "simple situation → natural question → unexpected answer → elegant mathematics",
-  "stage_2_corpus_target": {
-    "minimum_approximate": 60,
-    "preferred_range": "80-100"
-  },
-  "frozen_stage_3_candidate_file": "candidates/serious-candidates.jsonl",
-  "frozen_stage_3_candidate_count": 10,
-  "stage_4_audit_summary": "prior-art/STAGE4_SUMMARY.md",
-  "selected_primary_candidate": "CAND-005",
-  "selected_reserve_candidates": [],
-  "next_action": "Await the Problem Corner editor's response to the human-submitted CAND-005 proposal. Record any editorial reply, prior-art identification, requested revision, acceptance, rejection, or other disposition in the repository.",
-  "authoritative_entrypoint": "authoritative/START_HERE.md",
-  "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md",
-  "stage_5": {
-    "status": "PASSED",
-    "completed_on": "2026-10-05",
-    "decision_refs": [
-      "D012",
-      "D013",
-      "D014"
-    ],
-    "initial_primary_candidate": "CAND-010",
-    "retired_candidate": "CAND-010",
-    "retired_candidate_stage5_classification": "REDISCOVERY",
-    "final_selected_candidate": "CAND-005",
-    "final_novelty_assessment": "CLEAR_WITH_RELATED_PRIOR_ART",
-    "reserve_candidates": [],
-    "canonical_problem_file": "final/CAND-005_FORMALISATION.md",
-    "final_prior_art_file": "final/CAND-005_FINAL_PRIOR_ART_AUDIT.md",
-    "submission_package_file": "final/SUBMISSION_PACKAGE.md",
-    "submission_email_file": "final/SUBMISSION_EMAIL.md",
-    "reader_testing_note": "No independent human reader test was available in-session; an internal adversarial wording review was performed and the limitation is recorded.",
-    "submission_sent": true,
-    "submitted_on": "2026-10-06",
-    "submitted_by": "human",
-    "submission_recipient": "Chris Starr — The Mathematical Gazette Problem Corner",
-    "final_wording_revised_on": "2026-10-06",
-    "submission_status_note": "User confirmed submission after revising the reader-facing wording to the war-and-razing version and using a plain-text UP/DOWN solution. Mathematical kernel and qualified novelty classification are unchanged."
-  }
+  "base_object": "finite sequence of pairwise distinct real numbers",
+  "normal_form": "permutation by rank normalisation",
+  "legal_move": "delete an interior current term lying strictly between its two current neighbours",
+  "proved_core": "original endpoints plus original local maxima and minima",
+  "confluent": true,
+  "strong_deletability": "every original non-core term remains legally deletable until removed",
+  "reachable_state_structure": "Boolean lattice on the original non-core terms",
+  "next_priority": "enumerate permutations by survivor count and connect the distribution to alternating runs",
+  "authoritative_entrypoint": "authoritative/START_HERE.md"
 }
