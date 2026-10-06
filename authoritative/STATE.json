@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project": "Mathematical-Gazette-Problem-Corner",
   "publication_target": "The Mathematical Gazette — Problem Corner",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "stage_1": {
     "status": "PASSED",
     "completed_on": "2026-10-05",
@@ -70,7 +70,7 @@
   "stage_4_audit_summary": "prior-art/STAGE4_SUMMARY.md",
   "selected_primary_candidate": "CAND-005",
   "selected_reserve_candidates": [],
-  "next_action": "Human review of the Stage-5 CAND-005 package, especially the qualified novelty note; if satisfied, send the proposal, solution and background information to the current Problem Corner editor. No submission has been sent autonomously.",
+  "next_action": "Await the Problem Corner editor's response to the human-submitted CAND-005 proposal. Record any editorial reply, prior-art identification, requested revision, acceptance, rejection, or other disposition in the repository.",
   "authoritative_entrypoint": "authoritative/START_HERE.md",
   "gate_ledger": "authoritative/STAGE_GATE_LEDGER.md",
   "stage_5": {
@@ -78,7 +78,8 @@
     "completed_on": "2026-10-05",
     "decision_refs": [
       "D012",
-      "D013"
+      "D013",
+      "D014"
     ],
     "initial_primary_candidate": "CAND-010",
     "retired_candidate": "CAND-010",
@@ -91,6 +92,11 @@
     "submission_package_file": "final/SUBMISSION_PACKAGE.md",
     "submission_email_file": "final/SUBMISSION_EMAIL.md",
     "reader_testing_note": "No independent human reader test was available in-session; an internal adversarial wording review was performed and the limitation is recorded.",
-    "submission_sent": false
+    "submission_sent": true,
+    "submitted_on": "2026-10-06",
+    "submitted_by": "human",
+    "submission_recipient": "Chris Starr — The Mathematical Gazette Problem Corner",
+    "final_wording_revised_on": "2026-10-06",
+    "submission_status_note": "User confirmed submission after revising the reader-facing wording to the war-and-razing version and using a plain-text UP/DOWN solution. Mathematical kernel and qualified novelty classification are unchanged."
   }
 }
