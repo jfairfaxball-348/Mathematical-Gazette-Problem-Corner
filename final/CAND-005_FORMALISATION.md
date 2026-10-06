@@ -1,124 +1,96 @@
 # CAND-005 — Formalisation and Validation
 
 **Final title:** Which villages survive?  
-**Status:** canonical statement frozen  
-**Final novelty classification:** `CLEAR_WITH_RELATED_PRIOR_ART`
+**Status:** canonical submitted statement frozen  
+**Final novelty classification:** `CLEAR_WITH_RELATED_PRIOR_ART`  
+**Submission status:** submitted by the human author on 2026-10-06
 
 ## Canonical reader-facing statement
 
-> A road passes through villages \(V_1,V_2,\ldots,V_n\), in that order, where \(n\ge2\) and no two villages have the same altitude. At any stage, you may cross out an interior village if its altitude lies strictly between those of its two neighbouring villages still on the list. Continue until no more villages can be crossed out. Does the final list depend on the choices made? Which villages survive?
+> A road runs through more than two villages, all at different altitudes.
+>
+> The villages are perpetually at war. At any stage, a surviving village may be invaded and razed by the surviving villages immediately before and after it along the road, provided that its altitude lies strictly between theirs.
+>
+> Once a village has been razed, it disappears, so its two attackers become neighbours. The wars continue, with any eligible village being razed at each stage, until no further attack is possible.
+>
+> Does the final collection of surviving villages depend on the order in which the attacks take place? Which villages ultimately survive?
 
-The phrase **“still on the list”** is intentional: after deletions, eligibility is judged using the current neighbours.
+The phrase **“surviving villages immediately before and after it along the road”** is intentional: after a village has been razed, eligibility is judged using the current surviving neighbours.
+
+The road need not be straight. Only the order of the villages along the road and their relative altitudes matter.
 
 ## Theorem
 
-Let the altitudes be pairwise distinct real numbers \(h_1,\ldots,h_n\).
+Every legal sequence of attacks terminates with the same villages.
 
-Every legal sequence of deletions terminates in the same list. The survivors are exactly \(V_1,V_n\) together with every original strict local maximum or strict local minimum \(V_i\), \(2\le i\le n-1\).
+The survivors are exactly:
 
-Thus an interior \(V_i\) survives precisely when
-\[
-h_{i-1}<h_i>h_{i+1}
-\quad\text{or}\quad
-h_{i-1}>h_i<h_{i+1}.
-\]
+- the first village on the road;
+- the last village on the road; and
+- every village that was originally a local peak or a local valley.
 
-## Primary solution — signs and run compression
+Equivalently, an interior village survives precisely when it was originally higher than both of its neighbours or lower than both of them.
 
-Write a sign between each pair of consecutive villages:
-\[
-s_i=
-\begin{cases}
-+,&h_{i+1}>h_i,\\
--,&h_{i+1}<h_i.
-\end{cases}
-\]
-Because all altitudes are distinct, every sign is \(+\) or \(-\).
+## Primary solution — UP and DOWN
 
-Consider three consecutive villages currently remaining, with altitudes \(a,b,c\). The middle one is eligible exactly when \(b\) lies strictly between \(a\) and \(c\). This happens exactly when \(a<b<c\) or \(a>b>c\), so the two adjacent signs are equal.
+As we travel along the road, describe each step from one surviving village to the next as either **UP** or **DOWN**, according to whether the altitude increases or decreases.
 
-If the middle village is deleted, those two signs are replaced by the single sign from \(a\) to \(c\). Hence a legal move is exactly
-\[
-++\longrightarrow +,
-\qquad
---\longrightarrow -.
-\]
+A village can be razed precisely when the road is going in the same direction on both sides of it. Thus either the road goes UP to the village and then UP again, or it goes DOWN to the village and then DOWN again.
 
-Each move merely shortens one maximal run of equal signs. It can neither cross nor remove a boundary between a \(+\)-run and a \(-\)-run.
+When such a village is removed, two consecutive UP steps become a single UP step, or two consecutive DOWN steps become a single DOWN step.
 
-The process terminates because every move removes one village. It stops exactly when no two adjacent signs are equal, so every original maximal sign-run has been shortened to one sign.
+Therefore every attack merely shortens a stretch in which the road is continually rising or continually falling. It can never remove a village at which the direction changes from rising to falling or from falling to rising.
 
-That reduced sign word is independent of the order of contractions. Its vertices are the two original endpoints together with the original vertices where the sign changes. A sign change is exactly an original strict local maximum or local minimum.
+Eventually, every continually rising or continually falling stretch has been reduced as far as possible. The villages that remain are therefore exactly the first and last villages, together with every village that was originally a local peak or a local valley.
 
-Therefore every legal deletion order leaves the same actual villages: the endpoints and the original local extrema.
+Hence the same villages survive regardless of the order in which the attacks take place.
 
 ## Alternative solution — maximal monotone runs
 
-Mark the two endpoints and every original local maximum and local minimum.
+Mark the two endpoint villages and every original local peak and local valley.
 
-Between two consecutive marked villages, the original altitude sequence is strictly monotone. These intervals are the maximal monotone runs.
+Between two consecutive marked villages, the original altitude sequence is strictly increasing throughout or strictly decreasing throughout. A marked peak can never be razed because its surviving neighbours on both sides remain below it; similarly, a marked valley always has surviving neighbours above it.
 
-A marked interior village can never be deleted. If it is a local maximum, every surviving village immediately to its left and right lies below it; if it is a local minimum, both lie above it. So it never lies between its current neighbours.
+Within one of the continually rising or falling stretches, razing an eligible village leaves the remaining stretch still continually rising or falling. If any unmarked interior village remained when the wars stopped, it would still lie strictly between its two surviving neighbours and would therefore still be eligible to be razed.
 
-Within a maximal monotone run, deleting an interior village preserves strict monotonicity of the remaining villages in that run. If a terminal list retained any unmarked interior village of such a run, that village would still lie strictly between its two current neighbours and would still be deletable, a contradiction.
-
-Hence each maximal monotone run is reduced to its two marked endpoints. Joining the runs shows that the final list is exactly the endpoints plus original local extrema, independently of deletion order.
-
-This proof is retained because it gives a direct geometric interpretation of the sign-word proof.
+So each such stretch is eventually reduced to its two marked endpoints. The final survivors are therefore exactly the endpoints and original peaks and valleys, independently of attack order.
 
 ## Adversarial checks
 
 ### Termination
 
-Every move removes exactly one village, so no infinite deletion sequence is possible.
+Every attack razes exactly one village, so the process must stop.
 
 ### Small cases
 
-- \(n=2\): there is no interior village; both villages remain.
-- \(n=3\): if the three altitudes are monotone, the middle village is deleted. If the middle is a local maximum or minimum, all three remain.
-- \(n=4\): the sign words \(+++\), \(++-\), \(+--\), \(+-+\) (and reversals) reduce exactly as predicted by their sign-runs.
+The submitted wording assumes more than two villages.
+
+- With three villages in monotone altitude order, the middle village is razed.
+- With three villages where the middle is a peak or a valley, all three survive.
+- With four or more villages, the same UP/DOWN reduction applies without change.
+
+The theorem also extends harmlessly to the two-village case, although that case is deliberately excluded from the reader-facing wording.
 
 ### Distinct altitudes
 
-The pairwise-distinct hypothesis is deliberate. It avoids zero signs and makes “strictly between” equivalent to two equal adjacent signs. Allowing ties creates a different problem requiring an additional rule and is not part of the submission.
+All altitudes are required to be different. This avoids equality cases and makes “strictly between” unambiguous.
 
 ### Current versus original neighbours
 
-Eligibility always uses the two neighbours **still on the list**. The theorem nevertheless identifies the terminal villages using local extrema in the **original** list.
-
-### Actual vertices, not just a sign pattern
-
-The proof does more than show that the final signs alternate. Boundaries between original sign-runs cannot be deleted, while every internal vertex of a sign-run must disappear before termination. Hence the same original villages survive.
+Attack eligibility always uses the villages currently surviving immediately before and after the target. The theorem nevertheless identifies the final survivors in terms of peaks and valleys in the **original** configuration.
 
 ### No hidden geometric assumptions
 
-Only the order of the villages along the road and comparisons of their altitudes matter. Horizontal distances, gradients and units of altitude play no role.
+The road may curve or wind. Horizontal distances, gradients, and the physical shape of the road are irrelevant; only village order and altitude comparisons are used.
 
 ## Computational validation
 
-As supporting evidence, not as a substitute for proof, every permutation of lengths \(2\) through \(8\) was checked.
+As supporting evidence, not as a substitute for proof, every permutation of lengths 2 through 8 was checked before submission.
 
-For each permutation, the computation recursively explored **every legal deletion choice** and collected all terminal lists. In all cases there was exactly one terminal list, and it matched the endpoints plus the original local maxima and minima.
+For each permutation, every legal deletion branch was explored. In all 46,232 order types, there was exactly one terminal collection, and it matched the endpoints plus the original local peaks and valleys.
 
-The test covered
-\[
-2!+3!+4!+5!+6!+7!+8!=46{,}232
-\]
-distinct order types.
+## Reader-review note
 
-Since only relative altitude order matters, permutations are the natural finite test cases for sequences of distinct real altitudes.
+No independent human reader test was available during Stage 5. Subsequent human review of the wording led to the final qualitative war-and-razing formulation above and to the plain-language UP/DOWN solution used in the submitted package.
 
-## Reader-testing note
-
-No independent human reader was available in this session, so no external reader-testing result is claimed.
-
-An internal adversarial wording review identified the main possible ambiguity—whether “neighbours” meant original or current neighbours. The canonical statement now explicitly says **“the two neighbouring villages still on the list.”**
-
-Other points checked internally:
-
-- the stopping condition is explicit;
-- \(n\ge2\) avoids an unnecessary one-village convention;
-- equal altitudes are excluded explicitly;
-- “which villages survive?” makes clear that the actual original villages, not merely the final number, are sought.
-
-This limitation should remain visible if the package is reviewed later.
+The mathematical rule did not change: a village is eligible exactly when its altitude lies strictly between those of its two current surviving neighbours.
