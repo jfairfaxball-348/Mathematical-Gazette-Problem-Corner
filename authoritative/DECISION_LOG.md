@@ -90,3 +90,14 @@ Record only project-level decisions that affect objectives, stage order, evidenc
 **Evidence:** The final package in `final/` freezes an unambiguous statement, proves confluence and identifies the survivors, records edge cases and assumptions, includes a useful monotone-run alternative proof, preserves exhaustive supporting checks for all permutation order types through \(n=8\), and records the lack of an independent human reader test. The exact final prior-art audit retains the qualified classification `CLEAR_WITH_RELATED_PRIOR_ART`: local-extrema / longest-alternating-subsequence material is established, but the exact arbitrary-current-neighbour deletion/confluence formulation was not located. Current official Problem Corner proposal instructions were rechecked and an email was drafted.  
 **Consequence:** The package is ready for human review and possible submission. No submission has been sent, and no unqualified originality claim is authorised.
 
+## D014 — Final wording revised and submission recorded
+
+**Date:** 2026-10-06  
+**Decision:** Replace the frozen reader-facing “cross out a village” formulation of CAND-005 with the human-approved qualitative war-and-razing formulation, and record that the proposal has now been submitted.  
+**Wording change:** The submitted problem says that a village may be invaded and razed by the surviving villages immediately before and after it along the road when its altitude lies strictly between theirs; after it is razed, its attackers become neighbours. The public statement now says “more than two villages” rather than using symbolic notation.  
+**Solution presentation:** The editor-facing solution uses plain-text UP/DOWN language rather than plus/minus symbols, to preserve readability when copied into email.  
+**Mathematical effect:** None. The current-neighbour strict-betweenness rule and the theorem are unchanged: the terminal survivors are the two endpoints and the original local peaks and valleys, independently of attack order.  
+**Novelty effect:** A targeted check of the revised visible wording located no new materially equivalent source. The mathematical kernel was already audited. The classification therefore remains `CLEAR_WITH_RELATED_PRIOR_ART`; no unqualified originality claim is made.  
+**Submission:** The user confirmed that the proposal was submitted by the human author on 2026-10-06 to Chris Starr, Problem Corner editor. This repository records the human action; no autonomous sending is claimed.  
+**Consequence:** The final package now records the submitted wording and status. The next action is to await and record the editor's response.
+
